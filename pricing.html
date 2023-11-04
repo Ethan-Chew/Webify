@@ -4,18 +4,29 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="/styles/pricing.css" type="text/css">
         <link rel="stylesheet" href="./styles/navbar.css" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Sometype+Mono&display=swap" rel="stylesheet">
-
+        <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+        
         <title>SomeName | Pricing</title>
     </head>
     <body>
-        <header id="navbar">
-            <h1><a href="/index.html">OneSite</a></h1>
+        <header id="navigation">
+            <div id="navbar">
+                <h1><a href="/">OneSite</a></h1>
 
-            <nav id="tabs">
+                <nav class="tabs">
+                    <a href="/pricing.html">Pricing</a>
+                    <a class="button">Get Started</a>
+                </nav>
+
+                <i data-feather="menu" class="mobile-hamburger"></i>
+            </div>
+
+            <nav class="mobile-tabs">
                 <a href="/pricing.html">Pricing</a>
                 <a class="button">Get Started</a>
             </nav>
@@ -61,4 +72,10 @@
             </div>
         </section>
     </body>
+
+    <!-- Import Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        feather.replace();
+    </script> 
 </html>

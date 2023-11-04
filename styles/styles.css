@@ -1,7 +1,10 @@
 /* === Styles for the Main Landing Page === */
-@import url("./pricing.css");
 
 /* Global Styles */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0px;
@@ -11,10 +14,23 @@ body::-webkit-scrollbar{
     display: none;
 }
 
-/* Variables */
-:root {
-    --hero-title-fs: 100px;
-    --hero-desc-fs: 1.6rem;
+/* Return to Top Button */
+#goto-top {
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+
+    padding: 10px;
+    border-radius: 100%;
+    border: 0;
+    background-color: #13315C;
+    color: white;
+    cursor: pointer;
+}
+
+#goto-top .icon {
+    width: 50px;
+    height: auto;
 }
 
 /* Hero Section */
@@ -26,7 +42,9 @@ body::-webkit-scrollbar{
     text-align: center;
     width: 100vw;
     height: 100vh;
-    background-color: white;
+    background-color: #134074;
+    color: white;
+    top: 0;
 }
 
 #hero-section .header {
@@ -38,20 +56,102 @@ body::-webkit-scrollbar{
     align-items: center;
 }
 
-.header .title {
-    font-size: var(--hero-title-fs);
+#hero-section .header .title {
+    font-size: 100px;
     margin-bottom: 0px;
 }
 
-.header .desc {
-    font-size: var(--hero-desc-fs);
+#hero-section .header .desc {
+    font-size: 1.6rem;
     width: 80%;
 }
 
-.header button {
+#hero-section .header button {
     margin-top: 2%;
     border: none;
     padding: 15px 30px;
     border-radius: 50px;
     font-size: 1.7rem;
+    cursor: pointer;
+}
+
+#hero-section .down-arrow {
+    position: absolute;
+    bottom: 10px;
+    width: auto;
+    height: 100px;
+}
+
+/* Who We Are Section */
+#whoweare {
+    margin: 3% 5%;
+}
+
+#whoweare .title {
+    font-size: 60px;
+    margin: 0;
+}
+
+#whoweare .desc {
+    font-size: 1.5rem;
+}
+
+/* === RESPONSIVE UI ===*/
+@media only screen and (max-width: 1100px) {
+    /* Hero Section */
+    #hero-section .header .title {
+        font-size: 70px;
+    }
+
+    #hero-section .header .desc {
+        font-size: 1.4rem;
+        width: 80%;
+    }
+
+    #hero-section .down-arrow {
+        height: 80px;
+    }
+
+    /* Who We Are Section */
+    #whoweare .title {
+        font-size: 50px;
+    }
+    
+    #whoweare .desc {
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {  
+    /* Hero Section */  
+    #hero-section .header {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    #hero-section .header .title {
+        font-size: 60px;
+    }
+
+    #hero-section .header .desc {
+        font-size: 1.3rem;
+        width: 90%;
+    }
+
+    #hero-section .down-arrow {
+        height: 70px;
+    }
+
+    /* Who We Are Section */
+    #whoweare {
+        margin: 10% 5%;
+    }
+    
+    #whoweare .title {
+        font-size: 50px;
+    }
+    
+    #whoweare .desc {
+        font-size: 1.3rem;
+    }
 }

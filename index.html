@@ -4,18 +4,31 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="./styles/styles.css" type="text/css">
         <link rel="stylesheet" href="./styles/navbar.css" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <!-- Import Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Sometype+Mono&display=swap" rel="stylesheet">
+        
+        
         <title>Some Name | Home</title>
     </head>
 
     <body>
-        <header id="navbar">
-            <h1><a href="/">OneSite</a></h1>
+        <header id="navigation">
+            <div id="navbar">
+                <h1><a href="/">OneSite</a></h1>
 
-            <nav id="tabs">
+                <nav class="tabs">
+                    <a href="/pricing.html">Pricing</a>
+                    <a class="button">Get Started</a>
+                </nav>
+
+                <i data-feather="menu" class="mobile-hamburger"></i>
+            </div>
+
+            <nav class="mobile-tabs">
                 <a href="/pricing.html">Pricing</a>
                 <a class="button">Get Started</a>
             </nav>
@@ -27,10 +40,13 @@
                 <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat feugiat mauris. Sed egestas nulla lectus.</p>
                 <button>Get Started</button>
             </div>
+
+            <i data-feather="chevron-down" class="down-arrow"></i>
         </section>
 
         <section id="whoweare">
-            
+            <h2 class="title">Who are we?</h2>
+            <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nibh tellus, ornare sit amet sapien pharetra, bibendum fringilla ante. Nullam arcu nulla, aliquet vitae venenatis in, dictum a quam. Donec a leo lectus. Curabitur magna lorem, vestibulum commodo sodales sit amet, pretium tristique eros. Curabitur at vestibulum velit. In tincidunt leo sit amet tempus ultricies. Sed sagittis finibus neque, vitae bibendum risus dignissim eget. Mauris dapibus quam eget nulla auctor, ac ultricies tellus iaculis.            </p>
         </section>
 
         <section id="features">
@@ -40,5 +56,15 @@
         <section id="testimonials">
 
         </section>
+
+        <a id="goto-top" href="#hero-section">
+            <i data-feather="chevron-up" class="icon"></i>
+        </a>
     </body>
+    
+    <!-- Import Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        feather.replace();
+    </script> 
 </html>

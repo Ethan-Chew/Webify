@@ -1,0 +1,97 @@
+@import url("./styles.css");
+
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+/* Hero Section */
+#hero-section {
+    position: relative;
+    top: -100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: burlywood;
+}
+
+#hero-section .title {
+    margin: 0px;
+    font-size: var(--hero-title-fs);
+}
+
+#hero-section .desc {
+    font-size: var(--hero-desc-fs);
+}
+
+/* Price Tiers */
+#price-tiers {
+    margin-left: 4%;
+    margin-right: 4%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    position: relative;
+    top: -300px;
+    z-index: 5;
+}
+
+#price-tiers .tier {
+    max-width: 28%;
+    box-shadow: 0 0 50px #ccc;
+    background-color: white;
+    padding: 20px 30px 30px 20px;
+    border-radius: 15px;
+}
+
+#price-tiers .tier hr {
+    max-width: 50%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-color: darkgray;
+}
+
+#price-tiers .tier .name {
+    margin: 0px;
+    margin-bottom: 2px;
+    font-size: 2.2rem;
+}
+
+#price-tiers .tier .desc {
+    margin: 0px;
+    font-size: 1.2rem;
+}
+
+#price-tiers .tier .price {
+    margin: 0px;
+    margin-top: 10px;
+    font-size: 3.2rem;
+}
+
+#price-tiers .tier .action-btn {
+    padding: 15px;
+    border: 0px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border-radius: 15px;
+    width: 100%;
+}
+
+#price-tiers .tier .action-btn:hover {
+    
+}
+
+#price-tiers .tier .tier-info {
+
+}

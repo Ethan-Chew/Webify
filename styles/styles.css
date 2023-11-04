@@ -1,4 +1,5 @@
-/* Styles for the Main Landing Page */
+/* === Styles for the Main Landing Page === */
+@import url("./pricing.css");
 
 /* Global Styles */
 body {
@@ -8,6 +9,12 @@ body {
 
 body::-webkit-scrollbar{
     display: none;
+}
+
+/* Variables */
+:root {
+    --hero-title-fs: 100px;
+    --hero-desc-fs: 1.6rem;
 }
 
 /* Hero Section */
@@ -32,12 +39,12 @@ body::-webkit-scrollbar{
 }
 
 .header .title {
-    font-size: 100px;
+    font-size: var(--hero-title-fs);
     margin-bottom: 0px;
 }
 
 .header .desc {
-    font-size: 1.6rem;
+    font-size: var(--hero-desc-fs);
     width: 80%;
 }
 

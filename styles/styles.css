@@ -1,0 +1,50 @@
+/* Styles for the Main Landing Page */
+
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+/* Hero Section */
+#hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+}
+
+#hero-section .header {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: center;
+    align-items: center;
+}
+
+.header .title {
+    font-size: 100px;
+    margin-bottom: 0px;
+}
+
+.header .desc {
+    font-size: 1.6rem;
+    width: 80%;
+}
+
+.header button {
+    margin-top: 2%;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 1.7rem;
+}

@@ -1,0 +1,49 @@
+/* Styles for the Navigation Bar, identified with the id: navbar */
+
+#navbar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1.5em;
+    padding: 1em 2em;
+    width: calc(100vw - 3em - 4em);
+    background-color: rgba(155, 155, 155, 0.7);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 50px #ccc;
+    border-radius: 25px;
+    color: white;
+    z-index: 20;
+}
+
+
+#navbar #tabs {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: auto;
+    font-size: 1.7em;
+}
+
+#navbar h1 {
+    font-weight: 700;
+    font-size: 2.6rem;
+    margin: 0px;
+}
+
+#navbar a {
+    cursor: pointer;
+}
+
+#navbar a:hover {
+    opacity: 0.7;
+    transition: 0.3s opacity;
+}
+
+#navbar .button {
+    padding: 12px 20px;
+    border-radius: 15px;
+    background-color: darkgray;
+    cursor: pointer;
+}

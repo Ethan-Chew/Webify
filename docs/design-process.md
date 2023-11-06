@@ -1,4 +1,4 @@
-# Design and Ideation
+# Design Process
 This document outlines the thought and design process behind the creation of this website.  
 
 ## Research
@@ -16,8 +16,8 @@ The primary colour, **blue**, was chosen to represent [_freedom, imagination and
 ![Colour Scheme from Coolors](./assets/color-scheme.png)
 The Colour Scheme generated using [Coolors](https://coolors.co).
 
-### Fonts
-This project uses the [Roboto](https://fonts.google.com/specimen/Roboto) Font obtained from Google Fonts.
+### Fonts and Icons
+This project uses the [Roboto](https://fonts.google.com/specimen/Roboto) Font obtained from Google Fonts, together with [Feather Icons](https://feathericons.com/).
 
 ### Wireframe
 TODO: Add Wireframe

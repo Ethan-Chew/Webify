@@ -12,7 +12,7 @@ header {
 }
 
 #navbar {
-    padding: 20px 40px;
+    padding: 15px 30px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -29,7 +29,7 @@ header {
     align-items: center;
     gap: 35px;
     margin-left: auto;
-    font-size: 1.7em;
+    font-size: 1.5em;
 }
 
 #navbar .mobile-hamburger {
@@ -64,6 +64,7 @@ header {
     border-radius: 15px;
     background-color: rgba(19,49,92, 1);
     cursor: pointer;
+    font-weight: 700;
 }
 
 #navbar .button:hover {
@@ -104,6 +105,10 @@ header {
 
     .mobile-tabs .button {
         font-weight: 700;
+    }
+
+    #navbar h1 {
+        font-size: 2.2rem;
     }
 
     #navbar .tabs {

@@ -17,13 +17,13 @@ footer .left {
 }
 
 footer .title {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
     margin: 0;
 }
 
 footer .location {
-    font-size: 1.2rem;
-    margin: 0;
+    font-size: 1.1rem;
+    margin-top: 5px;
 }
 
 footer .social-media-icons {
@@ -34,6 +34,17 @@ footer .social-media-icons {
 }
 
 footer .social-media-icons .icon {
-    width: 35px;
+    width: 30px;
     height: auto;
+}
+
+@media only screen and (max-width: 768px) {  
+    footer {
+        flex-direction: column;
+    }
+
+    footer .social-media-icons {
+        margin-top: 20px;
+        margin-left: 0;
+    }
 }

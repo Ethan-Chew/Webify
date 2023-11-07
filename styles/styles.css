@@ -22,6 +22,7 @@ a {
 :root {
     --subtitle-size: 50px;
     --sub-subtitle-size: 30px;
+    --description-size: 20px;
 }
 
 /* Return to Top Button */
@@ -115,7 +116,7 @@ a {
 
 #whoweare .desc {
     margin-top: 10px;
-    font-size: 1.4rem;
+    font-size: var(--description-size);
 }
 
 #whoweare img {
@@ -200,11 +201,78 @@ a {
     margin-bottom: 0;
 }
 
+/* Contact Us Section */
+#contact {
+    margin: 3% 5%;
+    max-width: 50vw;
+}
+
+#contact .title {
+    font-size: var(--subtitle-size);
+    margin-bottom: 5px;
+}
+
+#contact .desc {
+    margin-top: 0;
+    font-size: var(--description-size);
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contact .inline-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#contact label {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#contact .inline-container label {
+    width: 48%;
+}
+
+#contact input, textarea {
+    /* border: 0; */
+    margin-top: 6px;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 1.3rem;
+    font-family: 'Roboto', sans-serif;
+    resize: vertical;
+}
+
+#contact button {
+    margin-top: 1.2rem;
+    font-size: 1.3rem;
+    padding: 12px 3rem;
+    border: 0;
+    border-radius: 0.9em;
+    font-weight: 700;
+    color: white;
+    background-color: rgba(18, 49, 92, 1);
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: rgba(18, 49, 92, 0.9);
+    transition: 0.15s background-color;
+}
+
 /* === RESPONSIVE UI ===*/
 @media only screen and (max-width: 1100px) {
     :root {
         --subtitle-size: 40px;
         --sub-subtitle-size: 25px;
+        --description-size: 20px;
     }
     
     /* Hero Section */
@@ -229,12 +297,35 @@ a {
     #whoweare .desc {
         font-size: 1.3rem;
     }
+
+    /* Contact Us Section */
+    #contact {
+        max-width: 90vw;
+    }
+
+    #contact label {
+        font-size: 1.3rem;
+    }
+    
+    #contact .inline-container label {
+        width: 48%;
+    }
+    
+    #contact input, textarea {
+        padding: 10px;
+        font-size: 1.2rem;
+    }
+    
+    #contact button {
+        border-radius: 0.7em;
+    }
 }
 
 @media only screen and (max-width: 768px) { 
     :root {
         --subtitle-size: 35px;
         --sub-subtitle-size: 25px;
+        --description-size: 17px;
     }
     
     /* Hero Section */  

@@ -23,6 +23,15 @@ header {
     color: white;
 }
 
+.colorChangeAdd {
+    background-color: #4e6585 !important;
+    transition: 0.3s background-color;
+}
+
+.colorChangeRemove {
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    transition: 0.3s background-color;
+}
 
 #navbar .tabs {
     display: flex;
@@ -32,11 +41,11 @@ header {
     font-size: 1.5em;
 }
 
-#navbar .mobile-hamburger {
+#navbar #mobile-hamburger {
     display: none;
 }
 
-.mobile-tabs {
+#mobile-tabs {
     display: none;
 }
 
@@ -78,15 +87,14 @@ header {
         border-radius: 20px;
     }
 
-    #navbar .mobile-hamburger {
+    #navbar #mobile-hamburger {
         display: block;
         height: 2.6rem;
         width: auto;
         margin-left: auto;
     }
     
-    .mobile-tabs {
-        /* display: flex; */
+    #mobile-tabs {
         flex-direction: column;
         gap: 30px;
         padding: 20px 40px;
@@ -98,12 +106,12 @@ header {
         border-radius: 20px;   
     }
 
-    .mobile-tabs a {
+    #mobile-tabs a {
         text-decoration: none;
         color: white;
     }
 
-    .mobile-tabs .button {
+    #mobile-tabs .button {
         font-weight: 700;
     }
 

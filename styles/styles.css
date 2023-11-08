@@ -21,15 +21,26 @@ a {
 /* Variables */
 :root {
     --subtitle-size: 50px;
-    --sub-subtitle-size: 30px;
-    --description-size: 20px;
+    --sub-subtitle-size: 35px;
+    --description-size: 23px;
+}
+
+/* Titles and Descriptions */
+.title {
+    font-size: var(--subtitle-size);
+    margin: 0;
+}
+
+.desc {
+    font-size: var(--description-size);
+    margin-top: 0;
 }
 
 /* Return to Top Button */
 #goto-top {
     position: fixed;
-    bottom: 2%;
-    right: 2%;
+    bottom: 10vh;
+    right: 3%;
 
     padding: 10px;
     border-radius: 100%;
@@ -69,7 +80,7 @@ a {
 
 #hero-section .header .title {
     font-size: 100px;
-    margin-bottom: 0px;
+    margin-bottom: 25px;
 }
 
 #hero-section .header .desc {
@@ -99,6 +110,13 @@ a {
     bottom: 10px;
     width: auto;
     height: 100px;
+    animation: bouncing-arrow 1s infinite;
+}
+
+@keyframes bouncing-arrow {
+    0% { bottom: 10px; }
+    50% { bottom: 15px; }
+    100% { bottom: 10px; }
 }
 
 /* Who We Are Section */
@@ -109,14 +127,9 @@ a {
     gap: 4%;
 }
 
-#whoweare .title {
-    font-size: var(--subtitle-size);
-    margin: 0;
-}
-
 #whoweare .desc {
     margin-top: 10px;
-    font-size: var(--description-size);
+    font-size: 24px;
 }
 
 #whoweare img {
@@ -132,8 +145,6 @@ a {
 }
 
 #features .title {
-    font-size: var(--subtitle-size);
-    margin: 0;
     margin-bottom: 30px;
 }
 
@@ -158,14 +169,14 @@ a {
 
 #features .feature .name {
     font-weight: 700;
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     margin-bottom: 10px;
     margin-top: 15px;
 }
 
 #features .feature .desc {
     margin: 0;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     margin-bottom: 0;
 }
 
@@ -190,15 +201,24 @@ a {
 }
 
 #features .additional-features .add-features-section p {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     margin: 0;
     flex-basis: 25%;
 }
 
 #features .disclaimer {
     margin-top: 3%;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     margin-bottom: 0;
+}
+
+/* Testimonials Section */
+#testimonials {
+    margin: 3% 5%;
+}
+
+#testimonials .title {
+    margin-bottom: 5px;
 }
 
 /* Contact Us Section */
@@ -208,13 +228,7 @@ a {
 }
 
 #contact .title {
-    font-size: var(--subtitle-size);
     margin-bottom: 5px;
-}
-
-#contact .desc {
-    margin-top: 0;
-    font-size: var(--description-size);
 }
 
 #contact form {
@@ -402,5 +416,7 @@ a {
 
     #features .feature {
         flex-basis: 100%;
+        align-items: center;
+        text-align: center;
     }
 }

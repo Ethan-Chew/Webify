@@ -18,17 +18,18 @@ body::-webkit-scrollbar{
     text-align: center;
     justify-content: center;
     width: 100vw;
-    height: 100vh;
+    height: 700px;
     background-color: burlywood;
 }
 
 #hero-section .title {
-    margin: 0px;
-    font-size: 100px;
+    margin: 0px 10%;
+    font-size: 70px;
 }
 
 #hero-section .desc {
-    font-size: 1.6rem;
+    margin: 5px 0px;
+    font-size: 1.5rem;
 }
 
 /* Price Tiers */
@@ -38,7 +39,7 @@ body::-webkit-scrollbar{
 
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
 
     position: relative;
@@ -47,7 +48,7 @@ body::-webkit-scrollbar{
 }
 
 #price-tiers .tier {
-    max-width: 27%;
+    flex-basis: 27%;
     box-shadow: 0 0 20px #777;
     background-color: white;
     padding: 30px;
@@ -63,42 +64,81 @@ body::-webkit-scrollbar{
 
 #price-tiers .tier .name {
     margin: 0px;
-    margin-bottom: 2px;
-    font-size: 2.2rem;
+    font-size: 2rem;
 }
 
+
 #price-tiers .tier .desc {
-    margin: 0px;
-    font-size: 1.2rem;
+    margin: 12px 0px; 
+    font-size: 1.1rem;
 }
 
 #price-tiers .tier .price {
     margin: 0px;
     margin-top: 10px;
-    font-size: 3.2rem;
+    font-size: 3rem;
+}
+
+#price-tiers .tier .price-per {
+    margin: 0px;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #777;
+}
+
+#price-tiers .features {
+    display: flex;
+    flex-direction: column;
+}
+
+#price-tiers .features .feature {
+    font-size: 1.1rem;
+    display: inline-flex;
+    gap: 10px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+#price-tiers .feature-icon {
+    height: 20px;
+    width: auto;
 }
 
 #price-tiers .tier .action-btn {
     padding: 15px;
     border: 0px;
-    font-size: 1.4rem;
+    font-size: 20px;
     font-weight: 700;
     border-radius: 15px;
     width: 100%;
+    display: inline-flex;
+}
+
+#price-tiers .tier .action-btn-icn {
+    margin-left: auto;
+    height: 23px;
+    width: auto;
 }
 
 /* === RESPONSIVE UI ===*/
 @media only screen and (max-width: 1200px) {
+    /* Hero Section */
+    #hero-section .title {
+        font-size: 60px;
+    }
+
     #price-tiers {
         gap: 50px;
         top: -320px;
+        flex-wrap: wrap;
     }
+
     #price-tiers .tier {
-        max-width: 90%;
         box-shadow: 0 0 20px #777;
         background-color: white;
         padding: 30px;
         border-radius: 15px;
+        flex-basis: 100%;
     }
 }
 
@@ -106,10 +146,15 @@ body::-webkit-scrollbar{
     /* Hero Section */
     #hero-section .title {
         margin: 0px;
-        font-size: 60px;
+        font-size: 50px;
     }
 
     #hero-section .desc {
         font-size: 1.6rem;
+    }
+
+    /* Price Tiers */
+    #price-tiers {
+
     }
 }

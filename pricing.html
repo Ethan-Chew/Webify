@@ -14,6 +14,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Sometype+Mono&display=swap" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
         
+        <!-- JS Functions -->
+        <script src="./js/navbar.js"></script>
+
         <title>SomeName | Pricing</title>
     </head>
     <body>
@@ -23,56 +26,96 @@
 
                 <nav class="tabs">
                     <a href="/pricing.html">Pricing</a>
-                    <a>Domains</a>
                     <a class="button">Get Started</a>
                 </nav>
 
-                <i data-feather="menu" class="mobile-hamburger"></i>
+                <i data-feather="menu" id="mobile-hamburger"></i>
             </div>
 
-            <nav class="mobile-tabs">
+            <nav id="mobile-tabs">
                 <a href="/pricing.html">Pricing</a>
                 <a class="button">Get Started</a>
             </nav>
         </header>
 
         <section id="hero-section">
-            <h1 class="title">Some Text</h1>
+            <h1 class="title">Select the Perfect Tier for you</h1>
             <p class="desc">wow</p>
         </section>
 
         <section id="price-tiers">
             <div class="tier">
-                <h2 class="name">Some Tier</h2>
-                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h2 class="name">Free</h2>
+                <p class="desc">Kickstart your hobby or personal projects; Perfect for beginners.</p>
                 <h3 class="price">$0</h3>
 
                 <hr>
 
-                <p>Vestibulum sollicitudin tincidunt quam at malesuada. Proin ut massa dolor. Praesent aliquet gravida cursus. Vivamus vitae auctor est. Aliquam tincidunt mollis nibh. Integer luctus orci sapien, vulputate porta sem tincidunt sed. Fusce consequat nulla quis augue iaculis pretium vehicula vitae libero. Aenean in condimentum lacus. Aenean ac congue est. Phasellus interdum tempor ligula a porta. Donec luctus ac nunc ac tristique.                </p>
-                <button class="action-btn">Get Started</button>
+                <div class="features">
+                    <p class="feature"><i data-feather="check-circle" class="feature-icon"></i>Drag and Drop Elements</p>
+                    <p class="feature"><i data-feather="check-circle" class="feature-icon"></i>Advanced Editing with Code</p>
+                    <p class="feature"><i data-feather="check-circle" class="feature-icon"></i>Site Analytics</p>
+                    <p class="feature"><i data-feather="check-circle" class="feature-icon"></i>Site Hosting with up to 10 Websites</p>
+                    <p class="feature"><i data-feather="check-circle" class="feature-icon"></i>SEO Optimisation</p>
+                    <p class="feature"><i data-feather="check-circle" class="feature-icon"></i>SSL Certificates</p>
+                    <p class="feature"><i data-feather="check-circle" class="feature-icon"></i>Email Support</p>
+                </div>
+
+                <br>
+                
+                <button class="action-btn">
+                    Get Started
+                    <i data-feather="arrow-right" class="action-btn-icn"></i>
+                </button>
             </div>
 
             <div class="tier">
-                <h2 class="name">Some Tier</h2>
-                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <h3 class="price">$0</h3>
+                <h2 class="name">Professional</h2>
+                <p class="desc">Everything in Free Tier, and much more. Perfect for delving deeper into websites.</p>
+                <h3 class="price">$15<span class="price-per"> per month</span></h3>
 
                 <hr>
                 
-                <p>Vestibulum sollicitudin tincidunt quam at malesuada. Proin ut massa dolor. Praesent aliquet gravida cursus. Vivamus vitae auctor est. Aliquam tincidunt mollis nibh. Integer luctus orci sapien, vulputate porta sem tincidunt sed. Fusce consequat nulla quis augue iaculis pretium vehicula vitae libero. Aenean in condimentum lacus. Aenean ac congue est. Phasellus interdum tempor ligula a porta. Donec luctus ac nunc ac tristique.                </p>
-                <button class="action-btn">Get Started</button>
+                <div class="features">
+                    <p class="feature"><i data-feather="check-circle" class="feature-icon"></i>Website Caching</p>
+                    <p class="feature"><i data-feather="check-circle" class="feature-icon"></i>Version Rollback</p>
+                    <p class="feature"><i data-feather="check-circle" class="feature-icon"></i>Custom Email Domain</p>
+                    <p class="feature"><i data-feather="check-circle" class="feature-icon"></i>Unlimited Website Hosting</p>
+                    <p class="feature"><i data-feather="check-circle" class="feature-icon"></i>Team Collaboration up to 10 people</p>
+                    <p class="feature"><i data-feather="check-circle" class="feature-icon"></i>DDoS Protection</p>
+                    <p class="feature"><i data-feather="check-circle" class="feature-icon"></i>24/7 Support</p>
+                </div>
+
+                <br>
+
+                <button class="action-btn">
+                    Upgrade your plan
+                    <i data-feather="arrow-right" class="action-btn-icn"></i>
+                </button>
             </div>
 
             <div class="tier">
-                <h2 class="name">Some Tier</h2>
-                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <h3 class="price">$0</h3>
+                <h2 class="name">Business</h2>
+                <p class="desc">Tailored for bigger teams with support for more advanced features.</p>
+                <h3 class="price">$150<span class="price-per"> per month</span></h3>
 
                 <hr>
                 
-                <p>Vestibulum sollicitudin tincidunt quam at malesuada. Proin ut massa dolor. Praesent aliquet gravida cursus. Vivamus vitae auctor est. Aliquam tincidunt mollis nibh. Integer luctus orci sapien, vulputate porta sem tincidunt sed. Fusce consequat nulla quis augue iaculis pretium vehicula vitae libero. Aenean in condimentum lacus. Aenean ac congue est. Phasellus interdum tempor ligula a porta. Donec luctus ac nunc ac tristique.                </p>
-                <button class="action-btn">Get Started</button>
+                <div class="features">
+                    <p class="feature"><i data-feather="check-circle" class="feature-icon"></i>A/B Testing</p>
+                    <p class="feature"><i data-feather="check-circle" class="feature-icon"></i>Unlimited Team Collaboration</p>
+                    <p class="feature"><i data-feather="check-circle" class="feature-icon"></i>Role-based Access Control</p>
+                    <p class="feature"><i data-feather="check-circle" class="feature-icon"></i>Rate Limiting</p>
+                    <p class="feature"><i data-feather="check-circle" class="feature-icon"></i>Debug and Audit Logs</p>
+                    <p class="feature"><i data-feather="check-circle" class="feature-icon"></i>24/7 Pirority Support</p>
+                </div>
+
+                <br>
+
+                <button class="action-btn">
+                    Contact Us
+                    <i data-feather="arrow-right" class="action-btn-icn"></i>
+                </button>
             </div>
         </section>
 

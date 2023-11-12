@@ -22,17 +22,17 @@ a {
 :root {
     --subtitle-size: 50px;
     --sub-subtitle-size: 35px;
-    --description-size: 23px;
+    --description-size: 21px;
 }
 
 /* Titles and Descriptions */
 .title {
-    font-size: var(--subtitle-size);
+    font-size: var(--subtitle-size) !important;
     margin: 0;
 }
 
 .desc {
-    font-size: var(--description-size);
+    font-size: var(--description-size) !important;
     margin-top: 0;
 }
 
@@ -79,12 +79,12 @@ a {
 }
 
 #hero-section .header .title {
-    font-size: 100px;
+    font-size: 100px !important;
     margin-bottom: 25px;
 }
 
 #hero-section .header .desc {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     width: 80%;
 }
 
@@ -93,7 +93,7 @@ a {
     border: none;
     padding: 15px 30px;
     border-radius: 50px;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     cursor: pointer;
 
     scale: 1;
@@ -215,46 +215,118 @@ a {
 /* Testimonials Section */
 #testimonials {
     margin: 3% 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #testimonials .title {
     margin-bottom: 5px;
 }
 
+#testimonials .carousel {
+    margin: 3% 10%;
+}
+
+#testimonials .carousel-slider {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+#testimonials .carousel-slider .carousel-icon {
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+}
+
+#testimonials .carousel-page {
+    display: block;
+    padding: 20px;
+    width: 35vw;
+    border-radius: 20px;
+    background-color: #e7ecf1;
+}
+
+#testimonials .carousel-page p {
+    font-size: 1.1rem;
+}
+
+#testimonials #hidden {
+    display: none;
+}
+
+#testimonials .carousel-title {
+    font-weight: 500;
+}
+
+#testimonials .carousel-title .job {
+    color: #134074;
+}
+
+#testimonials .carousel-pagination {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+#testimonials .pagination-circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: lightslategray;
+
+}
+
+#testimonials #active {
+    background-color: #134074 !important;
+}
+
 /* Contact Us Section */
-#contact {
+#contact-faq {
     margin: 3% 5%;
     max-width: 50vw;
 }
 
-#contact .title {
+#contact-faq .title {
     margin-bottom: 5px;
 }
 
-#contact form {
+#contact-faq .split {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#contact-faq .split #contact {
+    flex-basis: 60%;
+}
+
+#contact-faq form {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-#contact .inline-container {
+#contact-faq .inline-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-#contact label {
+#contact-faq label {
     display: flex;
     flex-direction: column;
     font-size: 1.5rem;
     font-weight: 700;
 }
 
-#contact .inline-container label {
+#contact-faq .inline-container label {
     width: 48%;
 }
 
-#contact input, textarea {
+#contact-faq input, textarea {
     /* border: 0; */
     margin-top: 6px;
     border-radius: 10px;
@@ -264,7 +336,7 @@ a {
     resize: vertical;
 }
 
-#contact button {
+#contact-faq button {
     margin-top: 1.2rem;
     font-size: 1.3rem;
     padding: 12px 3rem;
@@ -276,7 +348,7 @@ a {
     cursor: pointer;
 }
 
-#contact button:hover {
+#contact-faq button:hover {
     background-color: rgba(18, 49, 92, 0.9);
     transition: 0.15s background-color;
 }
@@ -313,24 +385,24 @@ a {
     }
 
     /* Contact Us Section */
-    #contact {
+    #contact-faq {
         max-width: 90vw;
     }
 
-    #contact label {
+    #contact-faq label {
         font-size: 1.3rem;
     }
     
-    #contact .inline-container label {
+    #contact-faq .inline-container label {
         width: 48%;
     }
     
-    #contact input, textarea {
+    #contact-faq input, textarea {
         padding: 10px;
         font-size: 1.2rem;
     }
     
-    #contact button {
+    #contact-faq button {
         border-radius: 0.7em;
     }
 }

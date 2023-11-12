@@ -17,13 +17,13 @@
         <script src="./js/navbar.js"></script>
         <script src="./js/index.js"></script>
 
-        <title>Some Name | Home</title>
+        <title>Webify | Home</title>
     </head>
 
     <body>
         <header id="navigation">
             <div id="navbar">
-                <h1><a href="/">OneSite</a></h1>
+                <h1><a href="/">Webify</a></h1>
 
                 <nav class="tabs">
                     <a href="/pricing.html">Pricing</a>
@@ -99,40 +99,94 @@
 
         <section id="testimonials">
             <h2 class="title">Chosen by many, Trusted by all</h2>
+            <div class="carousel">
+                <div class="carousel-slider">
+                    <i data-feather="chevron-left" class="carousel-icon"></i>
+                    
+                    <div class="carousel-page">
+                        <p class="carousel-text">
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam felis mi, mattis id vulputate at, rhoncus id orci. Cras eu elit ornare, congue urna vel, ullamcorper tellus."
+                        </p>
+                        <p class="carousel-title">
+                            Jane Doe - <span class="job">Managing Director @ Airbnb</span>
+                        </p>
+                    </div>
+
+                    <div class="carousel-page" id="hidden">
+                        <p class="carousel-text">
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam felis mi, mattis id vulputate at, rhoncus id orci. Cras eu elit ornare, congue urna vel, ullamcorper tellus."
+                        </p>
+                        <p class="carousel-title">
+                            John Doe - <span class="job">Chief of Technology @ OpenAI</span>
+                        </p>
+                    </div>
+
+                    <div class="carousel-page" id="hidden">
+                        <p class="carousel-text">
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam felis mi, mattis id vulputate at, rhoncus id orci. Cras eu elit ornare, congue urna vel, ullamcorper tellus."
+                        </p>
+                        <p class="carousel-title">
+                            Jane Doe - <span class="job">Managing Director @ Airbnb</span>
+                        </p>
+                    </div>
+
+                    <div class="carousel-page" id="hidden">
+                        <p class="carousel-text">
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam felis mi, mattis id vulputate at, rhoncus id orci. Cras eu elit ornare, congue urna vel, ullamcorper tellus."
+                        </p>
+                        <p class="carousel-title">
+                            Jane Doe - <span class="job">Managing Director @ Airbnb</span>
+                        </p>
+                    </div>
+
+                    <i data-feather="chevron-right" class="carousel-icon"></i>
+                </div>
+            </div>
+            <div class="carousel-pagination">
+                <p class="pagination-circle" id="active"></p>
+                <p class="pagination-circle" id=""></p>
+                <p class="pagination-circle" id=""></p>
+                <p class="pagination-circle" id=""></p>
+            </div>
         </section>
 
-        <section id="contact">
+        <section id="contact-faq">
             <h2 class="title">Contact Us</h2>
             <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin justo nec dolor dictum, vestibulum ultrices dui aliquam. Aenean vulputate feugiat porttitor.</p>
-            <form>
-                <div class="inline-container">
+            <div class="split">
+                <form id="contact">
+                    <div class="inline-container">
+                        <label>
+                            First Name
+                            <input type="text" placeholder="John" required>
+                        </label>
+                        <label>
+                            Last Name
+                            <input type="text" placeholder="Doe" required>
+                        </label>
+                    </div>
+    
                     <label>
-                        First Name
-                        <input type="text" placeholder="John" required>
+                        Email Address
+                        <input type="email" placeholder="example@example.com" required>
                     </label>
                     <label>
-                        Last Name
-                        <input type="text" placeholder="Doe" required>
+                        Title
+                        <input type="email" placeholder="An Amazing Title" required>
                     </label>
+                    <label>
+                        Description
+                        <textarea required></textarea>
+                    </label>
+    
+                    <button type="submit">
+                        Submit
+                    </button>
+                </form>
+                <div id="faq">
+
                 </div>
-
-                <label>
-                    Email Address
-                    <input type="email" placeholder="example@example.com" required>
-                </label>
-                <label>
-                    Title
-                    <input type="email" placeholder="An Amazing Title" required>
-                </label>
-                <label>
-                    Description
-                    <textarea required></textarea>
-                </label>
-
-                <button type="submit">
-                    Submit
-                </button>
-            </form>
+            </div>
         </section>
 
         <a id="goto-top" href="#hero-section">
@@ -141,7 +195,7 @@
 
         <footer>
             <div class="left">
-                <h3 class="title">OneSite</h3>
+                <h3 class="name">Webify</h3>
                 <p class="location">10 Singapore Rd, #01-01</p>
             </div>
             <div class="social-media-icons">

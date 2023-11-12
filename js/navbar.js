@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Change the Colour of the Navbar
     const navbar = document.getElementById('navbar')
+    const mobileTabs = document.getElementById("mobile-tabs")
     let hasChanged = false
 
     window.addEventListener('scroll', function() {
@@ -9,24 +10,27 @@ document.addEventListener("DOMContentLoaded", function() {
         if (scrollDist > this.window.innerHeight && !hasChanged) {
             navbar.classList.add("colorChangeAdd")
             navbar.classList.remove("colorChangeRemove")
+            mobileTabs.classList.add("colorChangeAdd")
+            mobileTabs.classList.remove("colorChangeRemove")
             hasChanged = true
         } else if (scrollDist < this.window.innerHeight && hasChanged) {
             navbar.classList.remove("colorChangeAdd")
             navbar.classList.add("colorChangeRemove")
+            mobileTabs.classList.remove("colorChangeAdd")
+            mobileTabs.classList.add("colorChangeRemove")
             hasChanged = false
         }
     })
 
     // Show Mobile Tabs
     const mobileHamburger = document.getElementById("mobile-hamburger")
-    const mobileTabs = document.getElementById("mobile-tabs")
     mobileHamburger.addEventListener("pointerdown", (e) => {
-        if (mobileTabs.style.display === "none") {
+        if (mobileTabs.style.display !== "flex") {
             mobileTabs.style.display = "flex"
-            mobileHamburger.dataset.feather = "x"
+            mobileHamburger.innerHTML = feather.icons['x'].toSvg()
         } else {
             mobileTabs.style.display = "none"
-            mobileHamburger.dataset.feather = "menu"
+            mobileHamburger.innerHTML = feather.icons['menu'].toSvg()
         }
     })
 })

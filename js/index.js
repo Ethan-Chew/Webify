@@ -66,9 +66,11 @@ document.addEventListener("DOMContentLoaded", function() {
             if (faqArr[i] === false) {
                 // FAQ is currently hidden, make visible
                 faqDescs[i].classList.remove("hidden")
+                faqExpansions[i].innerHTML = feather.icons['minus'].toSvg()
             } else {
                 // FAQ is currently visible, make hidden
                 faqDescs[i].classList.add("hidden")
+                faqExpansions[i].innerHTML = feather.icons['plus'].toSvg()
             }
             faqArr[i] = !faqArr[i]
         })

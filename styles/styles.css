@@ -8,14 +8,11 @@ html {
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0px;
+    text-decoration: none;
 }
 
 body::-webkit-scrollbar{
     display: none;
-}
-
-a {
-    text-decoration: none;
 }
 
 /* Variables */
@@ -283,23 +280,21 @@ a {
     background-color: #134074 !important;
 }
 
-/* Contact Us Section */
+/* Contact Us and FAQ Section */
 #contact-faq {
     margin: 3% 5%;
-    max-width: 50vw;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
 #contact-faq .title {
     margin-bottom: 5px;
 }
-
-#contact-faq .split {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-#contact-faq .split #contact {
+/* Contact Us Section */
+#contact-faq #contact {
     flex-basis: 60%;
 }
 
@@ -309,25 +304,16 @@ a {
     gap: 15px;
 }
 
-#contact-faq .inline-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
 #contact-faq label {
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     font-size: 1.5rem;
     font-weight: 700;
 }
 
-#contact-faq .inline-container label {
-    width: 48%;
-}
-
 #contact-faq input, textarea {
-    /* border: 0; */
+    border: 1px solid black;
     margin-top: 6px;
     border-radius: 10px;
     padding: 15px;
@@ -353,17 +339,55 @@ a {
     transition: 0.15s background-color;
 }
 
+/* FAQ Section */
+#contact-faq #faq {
+    flex-basis: 35%;
+}
+
+
+#contact-faq .faq-container, .faq-section {    
+    padding: 10px 0px;
+}
+
+#contact-faq .faq-container p {    
+    margin: 0;
+}
+
+#contact-faq .faq-container-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 1.3rem;
+    padding: 8px 0px;
+}
+
+#contact-faq .faq-container-desc {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+#contact-faq .faq-container .hidden {
+    display: none;
+}
+
+#contact-faq .faq-container-header .expand-icon {
+    margin-left: auto;
+    cursor: pointer;
+}
+
 /* === RESPONSIVE UI ===*/
 @media only screen and (max-width: 1100px) {
     :root {
         --subtitle-size: 40px;
         --sub-subtitle-size: 25px;
-        --description-size: 20px;
+        --description-size: 18px;
     }
     
     /* Hero Section */
     #hero-section .header .title {
-        font-size: 70px;
+        font-size: 70px !important;
     }
 
     #hero-section .header .desc {
@@ -384,11 +408,16 @@ a {
         font-size: 1.3rem;
     }
 
-    /* Contact Us Section */
-    #contact-faq {
-        max-width: 90vw;
+    /* Carousel Section */
+    #testimonials .carousel {
+        margin: 30px 0px;
     }
 
+    #testimonials .carousel-page {
+        width: 50vw;
+    }
+
+    /* Contact Us Section */
     #contact-faq label {
         font-size: 1.3rem;
     }
@@ -421,7 +450,7 @@ a {
     }
 
     #hero-section .header .title {
-        font-size: 60px;
+        font-size: 60px !important;
     }
 
     #hero-section .header .desc {
@@ -474,9 +503,30 @@ a {
     #features .disclaimer {
         margin-top: 6%;
     }
+
+    /* Contact Us and FAQ */
+    #contact-faq {
+        max-width: 100vw;
+    }
+
+    #contact-faq #contact {
+        flex-basis: 100%;
+    }
+
+    #contact-faq #faq {
+        flex-basis: 100%;
+    }
+
+    #contact-faq .faq-container, .faq-section {    
+        padding: 7px 0px;
+    }
+
+    #contact-faq .faq-container-header {
+        font-size: 1.2rem;
+    }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
     /* Features Section */
     #features .main-features {
         gap: 35px;

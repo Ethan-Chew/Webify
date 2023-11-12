@@ -54,4 +54,23 @@ document.addEventListener("DOMContentLoaded", function() {
             pagination[testimonialIndex].setAttribute("id", "active")
         })
     }
+    
+    // FAQ Section
+    let faqArr = []
+    const faqExpansions = document.getElementsByClassName("expand-icon")
+    const faqDescs = document.getElementsByClassName("faq-container-desc")
+    for (let i = 0; i < faqExpansions.length; i++) {
+        faqArr.push(false)
+
+        faqExpansions[i].addEventListener("click", function () {
+            if (faqArr[i] === false) {
+                // FAQ is currently hidden, make visible
+                faqDescs[i].classList.remove("hidden")
+            } else {
+                // FAQ is currently visible, make hidden
+                faqDescs[i].classList.add("hidden")
+            }
+            faqArr[i] = !faqArr[i]
+        })
+    }
 })

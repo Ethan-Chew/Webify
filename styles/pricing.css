@@ -113,6 +113,7 @@ body::-webkit-scrollbar{
     border-radius: 15px;
     width: 100%;
     display: inline-flex;
+    cursor: pointer;
 }
 
 #price-tiers .tier .action-btn-icn {
@@ -146,16 +147,12 @@ body::-webkit-scrollbar{
 @media only screen and (max-width: 768px) {  
     /* Hero Section */
     #hero-section .title {
-        margin: 0px;
         font-size: 50px;
+        margin: 1% 10%;
     }
 
     #hero-section .desc {
-        font-size: 1.6rem;
-    }
-
-    /* Price Tiers */
-    #price-tiers {
-
+        font-size: 25px;
+        margin: 0px 10%;
     }
 }

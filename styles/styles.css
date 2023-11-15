@@ -525,11 +525,6 @@ body::-webkit-scrollbar{
     #features .disclaimer {
         margin-top: 6%;
     }
-
-    /* Contact Us and FAQ Section */
-    #contact-faq {
-        font-size: 30px;
-    }
 }
 
 @media only screen and (max-width: 600px) {

@@ -21,6 +21,10 @@ header {
     color: white;
 }
 
+.dark {
+    background-color: #40434F !important;
+}
+
 .colorChangeAdd {
     background-color: #40434F !important;
     transition: 0.3s background-color;

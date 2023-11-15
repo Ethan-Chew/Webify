@@ -54,6 +54,18 @@ document.addEventListener("DOMContentLoaded", function() {
             pagination[testimonialIndex].setAttribute("id", "active")
         })
     }
+
+    // Handle Contact Us Form Submission
+    document.getElementById("contact-form").addEventListener("submit", function (e) {
+        e.preventDefault()
+        const submitButton = document.getElementById("contact-submit")
+        submitButton.innerHTML = "Submitted!"
+
+        // Change the text back after 5s
+        setTimeout(function () {
+            submitButton.innerHTML = "Submit"
+        }, 5000)
+    })
     
     // FAQ Section
     let faqArr = []

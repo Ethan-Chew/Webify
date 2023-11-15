@@ -4,6 +4,7 @@ footer {
     bottom: 0;
     padding: 30px 40px;
     max-width: 100vw;
+    font-size: 25px;
 
     background-color: black;
     color: white;
@@ -17,7 +18,7 @@ footer .left {
 }
 
 footer .name {
-    font-size: 2rem;
+    font-size: 1.2em;
     margin: 0;
 }
 

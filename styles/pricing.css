@@ -34,15 +34,14 @@ body::-webkit-scrollbar{
 
 /* Price Tiers */
 #price-tiers {
-    margin-left: 4%;
-    margin-right: 4%;
+    margin: 0px 4%;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
     position: relative;
-    top: -300px;
+    margin-top: -300px;
     z-index: 5;
     font-size: 25px;
 }
@@ -53,9 +52,12 @@ body::-webkit-scrollbar{
     background-color: white;
     padding: 30px;
     border-radius: 15px;
+    display: flex;
+    flex-direction: column;
 }
 
 #price-tiers .tier hr {
+    width: 100%; /* To fix a weird bug when using with flexboxes, where the hr line will disappear */
     max-width: 50%;
     margin-top: 20px;
     margin-bottom: 30px;
@@ -66,7 +68,6 @@ body::-webkit-scrollbar{
     margin: 0px;
     font-size: 1.8em;
 }
-
 
 #price-tiers .tier .desc {
     margin: 12px 0px; 
@@ -122,6 +123,67 @@ body::-webkit-scrollbar{
     width: auto;
 }
 
+/* Comparison Table */
+#feature-comparison {
+    margin: 5% 4%;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+}
+
+#feature-comparison .subtitle {
+    font-size: 2em;
+    margin: 0;
+}
+
+#feature-comparison p {
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+#feature-comparison .table-scroll {
+    overflow: auto;
+}
+
+#feature-comparison table {
+    width: 100%;
+    padding: 20px;
+    border: 2px solid #777;
+    border-radius: 20px;
+
+}
+
+#feature-comparison .table-headers {
+    font-size: 1.3em;
+    font-weight: 700;
+    text-align: center;
+}
+
+#feature-comparison .table-headers td {
+    padding: 10px;
+}
+
+#feature-comparison .table-rows td {
+    padding: 8px;
+    justify-content: center;
+    text-align: center;
+}
+
+#feature-comparison .icon {
+    width: auto;
+    height: 1em;
+    color: #777;
+}
+
+#feature-comparison .check {
+    color: #13315C;
+}
+
+#feature-comparison .feature {
+    text-align: left !important;
+    font-weight: bold;
+}
+
 /* === RESPONSIVE UI ===*/
 @media only screen and (max-width: 1200px) {
     /* Hero Section */
@@ -131,7 +193,7 @@ body::-webkit-scrollbar{
 
     #price-tiers {
         gap: 50px;
-        top: -320px;
+        margin-top: -320px;
         flex-wrap: wrap;
     }
 

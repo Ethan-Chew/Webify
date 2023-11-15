@@ -18,19 +18,12 @@ body::-webkit-scrollbar{
 /* Variables */
 :root {
     --subtitle-size: 50px;
-    --sub-subtitle-size: 35px;
-    --description-size: 21px;
 }
 
 /* Titles and Descriptions */
 .title {
     font-size: var(--subtitle-size) !important;
     margin: 0;
-}
-
-.desc {
-    font-size: var(--description-size) !important;
-    margin-top: 0;
 }
 
 /* Return to Top Button */
@@ -69,8 +62,7 @@ body::-webkit-scrollbar{
 #hero-section .header {
     display: flex;
     flex-direction: column;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin: 0 15%;
     text-align: center;
     align-items: center;
 }
@@ -81,7 +73,7 @@ body::-webkit-scrollbar{
 }
 
 #hero-section .header .desc {
-    font-size: 1.4rem;
+    font-size: 28px !important;
     width: 80%;
 }
 
@@ -90,7 +82,7 @@ body::-webkit-scrollbar{
     border: none;
     padding: 15px 30px;
     border-radius: 50px;
-    font-size: 1.5rem;
+    font-size: 28px;
     cursor: pointer;
 
     scale: 1;
@@ -137,8 +129,9 @@ body::-webkit-scrollbar{
 
 /* Features Section */
 #features {
-    background-color: #ebecf8;
+    background-color: #eff0f2;
     padding: 3% 5%;
+    font-size: 25px;
 }
 
 #features .title {
@@ -166,14 +159,14 @@ body::-webkit-scrollbar{
 
 #features .feature .name {
     font-weight: 700;
-    font-size: 1.7rem;
+    font-size: 1.2em;
     margin-bottom: 10px;
     margin-top: 15px;
 }
 
 #features .feature .desc {
     margin: 0;
-    font-size: 1.3rem;
+    font-size: 0.9em !important;
     margin-bottom: 0;
 }
 
@@ -184,7 +177,7 @@ body::-webkit-scrollbar{
 }
 
 #features .additional-features .subtitle {
-    font-size: var(--sub-subtitle-size);
+    font-size: 1.5em;
     margin-top: 0;
     margin-bottom: 20px;
 }
@@ -198,14 +191,14 @@ body::-webkit-scrollbar{
 }
 
 #features .additional-features .add-features-section p {
-    font-size: 1.3rem;
+    font-size: 0.9em;
     margin: 0;
     flex-basis: 25%;
 }
 
 #features .disclaimer {
     margin-top: 3%;
-    font-size: 1.1rem;
+    font-size: 0.7em;
     margin-bottom: 0;
 }
 
@@ -215,6 +208,7 @@ body::-webkit-scrollbar{
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 25px;
 }
 
 #testimonials .title {
@@ -240,14 +234,14 @@ body::-webkit-scrollbar{
 
 #testimonials .carousel-page {
     display: block;
-    padding: 20px;
-    width: 35vw;
+    padding: 4% 6%;
+    width: 48vw;
     border-radius: 20px;
     background-color: #e7ecf1;
 }
 
 #testimonials .carousel-page p {
-    font-size: 1.1rem;
+    font-size: 0.9em;
 }
 
 #testimonials #hidden {
@@ -273,11 +267,15 @@ body::-webkit-scrollbar{
     height: 15px;
     border-radius: 100%;
     background-color: lightslategray;
-
+    margin: 0;
 }
 
 #testimonials #active {
     background-color: #134074 !important;
+}
+
+#testimonials .testimonial-companies {
+    margin: 5% 20%;
 }
 
 /* Contact Us and FAQ Section */
@@ -288,11 +286,18 @@ body::-webkit-scrollbar{
     flex-direction: row;
     flex-wrap: wrap;
     gap: 40px;
+    font-size: 25px;
 }
 
 #contact-faq .title {
     margin-bottom: 5px;
 }
+
+#contact-faq .desc {
+    margin-top: 0;
+    font-size: 1em;
+}
+
 /* Contact Us Section */
 #contact-faq #contact {
     flex-basis: 60%;
@@ -308,7 +313,7 @@ body::-webkit-scrollbar{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    font-size: 1.5rem;
+    font-size: 1em;
     font-weight: 700;
 }
 
@@ -317,14 +322,14 @@ body::-webkit-scrollbar{
     margin-top: 6px;
     border-radius: 10px;
     padding: 15px;
-    font-size: 1.3rem;
+    font-size: 0.8em;
     font-family: 'Roboto', sans-serif;
     resize: vertical;
 }
 
 #contact-faq button {
     margin-top: 1.2rem;
-    font-size: 1.3rem;
+    font-size: 1em;
     padding: 12px 3rem;
     border: 0;
     border-radius: 0.9em;
@@ -344,7 +349,6 @@ body::-webkit-scrollbar{
     flex-basis: 35%;
 }
 
-
 #contact-faq .faq-container, .faq-section {    
     padding: 10px 0px;
 }
@@ -358,14 +362,18 @@ body::-webkit-scrollbar{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    font-weight: 500;
-    font-size: 1.3rem;
+    font-weight: 700;
+    font-size: 1em !important;
     padding: 8px 0px;
+}
+
+#contact-faq .faq-container-header p {
+    max-width: 92%;
 }
 
 #contact-faq .faq-container-desc {
     margin: 0;
-    font-size: 1.1rem;
+    font-size: 0.9em;
 }
 
 #contact-faq .faq-container .hidden {
@@ -374,6 +382,8 @@ body::-webkit-scrollbar{
 
 #contact-faq .faq-container-header .expand-icon {
     margin-left: auto;
+    width: 1em;
+    height: auto;
     cursor: pointer;
 }
 
@@ -381,8 +391,6 @@ body::-webkit-scrollbar{
 @media only screen and (max-width: 1100px) {
     :root {
         --subtitle-size: 40px;
-        --sub-subtitle-size: 25px;
-        --description-size: 18px;
     }
     
     /* Hero Section */
@@ -391,7 +399,7 @@ body::-webkit-scrollbar{
     }
 
     #hero-section .header .desc {
-        font-size: 1.4rem;
+        font-size: 25px !important;
         width: 80%;
     }
 
@@ -405,7 +413,7 @@ body::-webkit-scrollbar{
     }
     
     #whoweare .desc {
-        font-size: 1.3rem;
+        font-size: 22px;
     }
 
     /* Carousel Section */
@@ -414,8 +422,9 @@ body::-webkit-scrollbar{
     }
 
     #testimonials .carousel-page {
-        width: 50vw;
+        width: 60vw;
     }
+
 
     /* Contact Us Section */
     #contact-faq label {
@@ -436,13 +445,30 @@ body::-webkit-scrollbar{
     }
 }
 
-@media only screen and (max-width: 768px) { 
-    :root {
-        --subtitle-size: 35px;
-        --sub-subtitle-size: 25px;
-        --description-size: 17px;
+@media only screen and (max-width: 900px) {
+    /* Change the Width of Contact Section */
+    #contact-faq {
+        max-width: 100vw;
+    }
+
+    #contact-faq #contact {
+        flex-basis: 100%;
+    }
+
+    #contact-faq #faq {
+        flex-basis: 100%;
     }
     
+    #contact-faq .faq-container, .faq-section {    
+        padding: 7px 0px;
+    }
+
+    #contact-faq .faq-container-header {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 800px) { 
     /* Hero Section */  
     #hero-section .header {
         margin-left: 10%;
@@ -454,7 +480,7 @@ body::-webkit-scrollbar{
     }
 
     #hero-section .header .desc {
-        font-size: 1.3rem;
+        font-size: 20px;
         width: 90%;
     }
 
@@ -469,10 +495,6 @@ body::-webkit-scrollbar{
     
     #whoweare .title {
         font-size: 50px;
-    }
-    
-    #whoweare .desc {
-        font-size: 1.1rem;
     }
 
     #whoweare img {
@@ -504,25 +526,9 @@ body::-webkit-scrollbar{
         margin-top: 6%;
     }
 
-    /* Contact Us and FAQ */
+    /* Contact Us and FAQ Section */
     #contact-faq {
-        max-width: 100vw;
-    }
-
-    #contact-faq #contact {
-        flex-basis: 100%;
-    }
-
-    #contact-faq #faq {
-        flex-basis: 100%;
-    }
-
-    #contact-faq .faq-container, .faq-section {    
-        padding: 7px 0px;
-    }
-
-    #contact-faq .faq-container-header {
-        font-size: 1.2rem;
+        font-size: 30px;
     }
 }
 

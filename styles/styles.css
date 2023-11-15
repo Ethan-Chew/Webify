@@ -275,7 +275,15 @@ body::-webkit-scrollbar{
 }
 
 #testimonials .testimonial-companies {
-    margin: 5% 20%;
+    margin: 4% 5%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+#testimonials .testimonial-img {
+    height: 45px;
+    width: auto;
 }
 
 /* Contact Us and FAQ Section */

@@ -1,0 +1,9 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}

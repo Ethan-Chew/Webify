@@ -1,4 +1,8 @@
 /* Styles for the Navigation Bar, identified with the id: navbar */
+:root {
+    --darkmode-colour: #616365;
+}
+
 header {
     position: fixed;
     top: 0;
@@ -22,11 +26,11 @@ header {
 }
 
 .dark {
-    background-color: #40434F !important;
+    background-color: var(--darkmode-colour) !important;
 }
 
 .colorChangeAdd {
-    background-color: #40434F !important;
+    background-color: var(--darkmode-colour) !important;
     transition: 0.3s background-color;
 }
 

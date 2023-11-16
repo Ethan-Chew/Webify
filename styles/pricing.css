@@ -19,7 +19,7 @@ body::-webkit-scrollbar{
     justify-content: center;
     width: 100vw;
     height: 700px;
-    background-color: burlywood;
+    /* background-color: burlywood; */
 }
 
 #hero-section .title {

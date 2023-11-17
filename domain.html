@@ -3,8 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/Normalize.css" type="text/css">
         <link rel="stylesheet" href="./styles/navbar.css" type="text/css">
         <link rel="stylesheet" href="./styles/domain.css" type="text/css">
+        <link rel="stylesheet" href="./styles/footer.css" type="text/css">
 
         <!-- Import Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,10 +48,45 @@
                 <input type="text" id="domain-search" placeholder="Search for a Domain">
                 <button type="submit" id="search-btn">Search</button>
             </form>
+            <hr style="width: 90%;">
         </section>
 
-        <section id="domain-list">
-
+        <section id="recommended-domains">
+            <div class="header">
+                <h2 id="domain-title" class="margin0">Domains for You</h2>
+                <select id="sorter">
+                    <option value="default">Default</option>
+                    <option value="asc">Price Asc</option>
+                    <option value="desc">Price Dsc</option>
+                </select>
+            </div>
+            <p class="margin0" id="search-result"></p>
+            <div class="domain-list">
+                <div class="default-domainlist">
+                    <i data-feather="search" class="initial-icon"></i>
+                    <p class="margin0 cannot-find">Oops! There's nothing here!</p>
+                    Start by Searching for a Top-Level Domain!
+                </div>
+            </div>
         </section>
+
+        <footer>
+            <div class="left">
+                <h3 class="name">Webify</h3>
+                <p class="location">10 Singapore Rd, #01-01</p>
+            </div>
+            <div class="social-media-icons">
+                <i data-feather="twitter" class="icon"></i>
+                <i data-feather="instagram" class="icon"></i>
+                <i data-feather="facebook" class="icon"></i>
+                <i data-feather="linkedin" class="icon"></i>
+            </div>
+        </footer>
     </body>
+
+    <!-- Import Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        feather.replace();
+    </script> 
 </html>

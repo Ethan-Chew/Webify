@@ -2,6 +2,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0px;
+    height: 100vh;
 }
 
 body::-webkit-scrollbar{
@@ -15,14 +16,16 @@ body::-webkit-scrollbar{
 /* Hero Section */
 #hero-section {
     width: 100vw;
-    height: 50vw;
+    height: 450px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     font-size: 25px;
 }
 
 #hero-section .title-desc {
+    /* position: relative;
+    top: 70px; */
     margin: 2% 5%;
     text-align: left;
 }
@@ -38,6 +41,8 @@ body::-webkit-scrollbar{
 }
 
 #hero-section form {
+    /* position: relative;
+    top: 70px; */
     margin: 1% 5%;
     display: flex;
     align-items: center;
@@ -54,9 +59,155 @@ body::-webkit-scrollbar{
 #hero-section button {
     height: 100%;
     border-radius: 0px 15px 15px 0px;
-    border: 1px solid black;
+    border: 0;
+    background-color: #1D2023;
+    color: white;
     font-size: 0.9em;
     padding: 0px 20px;
+    cursor: pointer;
 }
 
 /* Domains Section */
+#recommended-domains {
+    margin: 1% 5% 3% 5%;
+    font-size: 25px;
+}
+
+#recommended-domains .header {
+    display: flex;
+    flex-direction: row;
+}
+
+#recommended-domains h2 {
+    font-size: 1.6em;
+    margin-bottom: 0.3em;
+}
+
+#recommended-domains #sorter {
+    margin-left: auto;
+    padding: 5px 20px;
+    border-radius: 20px;
+    display: none;
+}
+
+#recommended-domains #search-result {
+    margin-bottom: 0.8em;
+}
+
+#recommended-domains .default-domainlist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 300px;
+
+    border-radius: 20px;
+    background-color: #eff0f2;
+    color: #3F4650;
+}
+
+#recommended-domains .cannot-find {
+    font-weight: 700;
+    font-size: 1.2em;
+    margin: 20px 0px 0px 0px;
+}
+
+#recommended-domains .initial-icon {
+    width: 2em;
+    height: auto;
+    stroke-width: 3px;
+}
+
+#recommended-domains .container {
+    background-color: #f3f4f5;
+    padding: 20px 30px;
+    border-radius: 20px;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#recommended-domains .domain-list > :not(:last-child) {
+    margin-bottom: 10px !important;
+}
+
+#recommended-domains .container .left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#recommended-domains .domain-name {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+#recommended-domains .discount-tag {
+    font-size: 0.6em;
+    padding: 5px 10px;
+    background-color: #2CAEA3;
+    border-radius: 20px;
+    color: white;
+}
+
+#recommended-domains .container .right { 
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.2em;
+}
+    
+#recommended-domains .add-to-cart {
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    font-size: 0.9em;
+    padding: 0.5em;
+    border-radius: 10px;
+    background-color: rgba(19,49,92, 1);
+    color: #FFF;
+    cursor: pointer;
+    min-width: 180px;
+}
+
+/* === RESPONSIVE UI ===*/
+@media only screen and (max-width: 800px) {
+    /* Hero Section */
+    #hero-section {
+        font-size: 20px;
+        height: 400px;
+    }
+
+    /* Domains Section */
+    #recommended-domains {
+        margin: 20px 5% 20px 5%;
+        font-size: 22px;
+    }
+
+    #recommended-domains .header {
+        flex-direction: column;
+    }
+
+    #recommended-domains #sorter {
+        margin-left: 0;
+        border-radius: 10px;
+        max-width: 50%;
+    }
+
+    #recommended-domains .container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #recommended-domains .container .right { 
+        margin-left: 0;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}

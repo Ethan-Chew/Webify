@@ -1,9 +1,6 @@
 // JS for Main Landing Page
 
 document.addEventListener("DOMContentLoaded", function() {
-    const toTop = document.getElementById('goto-top')
-    let hasChanged = false
-
     // Typing animation for Hero Section
     const heroTitleTxt = "Design it, Ship it."
     const typingAnim = async (text) => {
@@ -24,39 +21,13 @@ document.addEventListener("DOMContentLoaded", function() {
                 await new Promise(resolve => setTimeout(resolve, 100))
             }
         }
-
+        
         await typeText(text)
         await new Promise(resolve => setTimeout(resolve, 5000)) // Wait 5s before delete animation
         await deleteText(text)
     }
     typingAnim(heroTitleTxt)
     setInterval(() => typingAnim(heroTitleTxt), (200 * heroTitleTxt.length) + (100 * heroTitleTxt.length) + 6000) // Repeat every 1s
-    
-    // Handle Page Scroll
-    window.addEventListener('scroll', function() {
-        let scrollDist = document.documentElement.scrollTop || document.body.scrollTop || 0
-    
-        if (scrollDist > this.window.innerHeight && !hasChanged) {
-            toTop.style.cssText -= "display: none;"
-            hasChanged = true
-        } else if (scrollDist < this.window.innerHeight && hasChanged) {
-            toTop.style.cssText += "display: none;"
-            hasChanged = false
-        }
-
-        // Ensure the Go to Top button does not intersect footer
-        const footerRect = document.getElementsByTagName("footer")[0].getBoundingClientRect()
-        const topButtonBottomPos = toTop.offsetTop + toTop.offsetHeight
-        if (footerRect.y < topButtonBottomPos) {
-            // If True, Button is lower than the Footer
-            let heightDiff = topButtonBottomPos - footerRect.y;
-            let style = window.getComputedStyle(toTop);
-            let addBottom = parseInt(style.getPropertyValue('bottom')) + heightDiff;
-            toTop.style.bottom = addBottom + 20 + 'px';
-        } else {
-            toTop.style.bottom = '' // Remove bottom padding if button higher than footer
-        }
-    })
 
     // Testimonial Carousel
     let testimonialIndex = 0

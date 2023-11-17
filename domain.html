@@ -4,9 +4,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./styles/Normalize.css" type="text/css">
-        <link rel="stylesheet" href="./styles/navbar.css" type="text/css">
+        <link rel="stylesheet" href="./styles/components/navbar.css" type="text/css">
+        <link rel="stylesheet" href="./styles/components/totopbtn.css" type="text/css">
         <link rel="stylesheet" href="./styles/domain.css" type="text/css">
-        <link rel="stylesheet" href="./styles/footer.css" type="text/css">
+        <link rel="stylesheet" href="./styles/components/footer.css" type="text/css">
 
         <!-- Import Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,7 +15,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Sometype+Mono&display=swap" rel="stylesheet">
         
         <!-- JS Functions -->
-        <script src="./js/navbar.js"></script>
+        <script src="./js/components/navbar.js"></script>
         <script src="./js/domains.js"></script>
         
         <title>Webify | Domains</title>
@@ -35,6 +36,7 @@
 
             <nav id="mobile-tabs" class="dark">
                 <a href="/pricing.html">Pricing</a>
+                <a href="/domain.html">Domains</a>
                 <a class="button">Get Started</a>
             </nav>
         </header>
@@ -69,6 +71,10 @@
                 </div>
             </div>
         </section>
+
+        <a id="goto-top" href="#hero-section" class="hidden">
+            <i data-feather="chevron-up" class="icon"></i>
+        </a>
 
         <footer>
             <div class="left">

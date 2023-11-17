@@ -3,9 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="./styles/Normalize.css" type="text/css">
+        <link rel="stylesheet" href="./styles/components/navbar.css" type="text/css">
+        <link rel="stylesheet" href="./styles/components/totopbtn.css" type="text/css">
+        <link rel="stylesheet" href="./styles/components/footer.css" type="text/css">
         <link rel="stylesheet" href="./styles/styles.css" type="text/css">
-        <link rel="stylesheet" href="./styles/navbar.css" type="text/css">
-        <link rel="stylesheet" href="./styles/footer.css" type="text/css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Import Fonts -->
@@ -14,7 +15,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Sometype+Mono&display=swap" rel="stylesheet">
         
         <!-- JS Functions -->
-        <script src="./js/navbar.js"></script>
+        <script src="./js/components/navbar.js"></script>
+        <script src="./js/components/totopbtn.js"></script>
         <script src="./js/index.js"></script>
 
         <title>Webify | Home</title>
@@ -36,13 +38,14 @@
 
             <nav id="mobile-tabs">
                 <a href="/pricing.html">Pricing</a>
+                <a href="/domain.html">Domains</a>
                 <a class="button">Get Started</a>
             </nav>
         </header>
 
         <section id="hero-section">
             <div class="header">
-                <h1 class="title"><span class="typed-title">Design it, Ship it.</span><span class="title-cursor">|</span></h1>
+                <h1 class="title margin0"><span class="typed-title">Design it, Ship it.</span><span class="title-cursor">|</span></h1>
                 <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat feugiat mauris. Sed egestas nulla lectus.</p>
                 <button>Get Started</button>
             </div>
@@ -52,7 +55,7 @@
 
         <section id="whoweare">
             <div class="text-section">
-                <h2 class="title">Who are we?</h2>
+                <h2 class="title margin0">Who are we?</h2>
                 <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nibh tellus, ornare sit amet sapien pharetra, bibendum fringilla ante. Nullam arcu nulla, aliquet vitae venenatis in, dictum a quam. Donec a leo lectus. Curabitur magna lorem, vestibulum commodo sodales sit amet, pretium tristique eros. Curabitur at vestibulum velit. In tincidunt leo sit amet tempus ultricies. Sed sagittis finibus neque, vitae bibendum risus dignissim eget. Mauris dapibus quam eget nulla auctor, ac ultricies tellus iaculis.            </p>    
             </div>
             <!-- Temporary Image -->
@@ -60,22 +63,22 @@
         </section>
 
         <section id="features">
-            <h2 class="title">Creating <i>your</i> website, just got better.</h2>
+            <h2 class="title margin0">Creating <i>your</i> website, just got better.</h2>
             <section class="main-features">
                 <div class="feature">
                     <img src="https://placehold.co/500x400">
                     <h4 class="name">For Everyone</h4>
-                    <p class="desc">Effortlessly Drag & Drop elements for beginners, Direct Code Editing for Pros.</p>
+                    <p class="desc margin0">Effortlessly Drag & Drop elements for beginners, Direct Code Editing for Pros.</p>
                 </div>
                 <div class="feature">
                     <img src="https://placehold.co/500x400">
                     <h4 class="name">Advanced Analytics</h4>
-                    <p class="desc">Track your site's performance anytime, anywhere. Run A/B Tests like a professional.*</p>
+                    <p class="desc margin0">Track your site's performance anytime, anywhere. Run A/B Tests like a professional.*</p>
                 </div>
                 <div class="feature">
                     <img src="https://placehold.co/500x400">
                     <h4 class="name">Domain Management</h4>
-                    <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat feugiat mauris. Sed egestas nulla lectus.</p>
+                    <p class="desc margin0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat feugiat mauris. Sed egestas nulla lectus.</p>
                 </div>
             </section>
 
@@ -84,22 +87,22 @@
             <section class="additional-features">
                 <h3 class="subtitle">That's not all.</h3>
                 <div class="add-features-section">
-                    <p>Web Hosting</p>
-                    <p>SSL Certificates*</p>
-                    <p>SEO Optimisation</p>
-                    <p>Unlimited DNS Records</p>
-                    <p>Version Rollback*</p>
-                    <p>Collaboration*</p>
-                    <p>Caching*</p>
-                    <p>Custom Email Domain*</p>
-                    <p>24/7 Support</p>
+                    <p class="margin0">Web Hosting</p>
+                    <p class="margin0">SSL Certificates*</p>
+                    <p class="margin0">SEO Optimisation</p>
+                    <p class="margin0">Unlimited DNS Records</p>
+                    <p class="margin0">Version Rollback*</p>
+                    <p class="margin0">Collaboration*</p>
+                    <p class="margin0">Caching*</p>
+                    <p class="margin0">Custom Email Domain*</p>
+                    <p class="margin0">24/7 Support</p>
                 </div>
             </section>
             <p class="disclaimer"><i>Features highlighted with an asterisk (*) may be limited or may not be included in the free tier. Visit the <a href="/pricing.html">Pricing</a> site for more information.</i></p>
         </section>
 
         <section id="testimonials">
-            <h2 class="title">Chosen by many, Trusted by all</h2>
+            <h2 class="title margin0">Chosen by many, Trusted by all</h2>
             <div class="carousel">
                 <div class="carousel-slider">
                     <i data-feather="chevron-left" class="carousel-icon"></i>
@@ -143,11 +146,11 @@
                     <i data-feather="chevron-right" class="carousel-icon"></i>
                 </div>
             </div>
-            <div class="carousel-pagination">
-                <p class="pagination-circle" id="active"></p>
-                <p class="pagination-circle" id=""></p>
-                <p class="pagination-circle" id=""></p>
-                <p class="pagination-circle" id=""></p>
+            <div class="carousel-pagination margin0">
+                <p class="pagination-circle margin0" id="active"></p>
+                <p class="pagination-circle margin0" id=""></p>
+                <p class="pagination-circle margin0" id=""></p>
+                <p class="pagination-circle margin0" id=""></p>
             </div>
             <div class="testimonial-companies">
                 <img src="/img/AirbnbLogo.png" class="testimonial-img">
@@ -161,7 +164,7 @@
 
         <section id="contact-faq">
             <section id="contact">
-                <h2 class="title">Contact Us</h2>
+                <h2 class="title margin0">Contact Us</h2>
                 <p class="desc">Contact us if you have any questions or are enquiring about the Business plan. We will get back to you within 5 working days.</p>
                 <form id="contact-form">
                     <label>
@@ -187,21 +190,21 @@
                 </form>
             </section>
             <section id="faq">
-                <h2 class="title">FAQ</h2>
+                <h2 class="title margin0">FAQ</h2>
                 
                 <div class="faq-section">
                     <hr>
                     <div class="faq-container">
                         <div class="faq-container-header">
-                            <p>Can I switch between pricing tiers at any time?</p>
+                            <p class="margin0">Can I switch between pricing tiers at any time?</p>
                             <i data-feather="plus" class="expand-icon"></i>
                         </div>
-                        <p class="faq-container-desc hidden">Yes, you can upgrade or downgrade your plan at any time. Navigate to the billing section in your account settings. For enterprise users, do contact us.</p>
+                        <p class="faq-container-desc hidden margin0">Yes, you can upgrade or downgrade your plan at any time. Navigate to the billing section in your account settings. For enterprise users, do contact us.</p>
                     </div>
                     <hr>
                     <div class="faq-container">
                         <div class="faq-container-header">
-                            <p>Is there a free trial for paid plans?</p>
+                            <p class="margin0">Is there a free trial for paid plans?</p>
                             <i data-feather="plus" class="expand-icon"></i>
                         </div>
                         <p class="faq-container-desc hidden">Yes, all paid plans come with a 14 day trial. We do not need your payment information during this period.</p>
@@ -209,7 +212,7 @@
                     <hr>
                     <div class="faq-container">
                         <div class="faq-container-header">
-                            <p>Is there a special price for students?</p>
+                            <p class="margin0">Is there a special price for students?</p>
                             <i data-feather="plus" class="expand-icon"></i>
                         </div>
                         <p class="faq-container-desc hidden">Yes! Create an account using your school's email, and contact us with proof of education for 25% off on the Professional plan.</p>
@@ -217,7 +220,7 @@
                     <hr>
                     <div class="faq-container">
                         <div class="faq-container-header">
-                            <p>Can I transfer my domain to/from Webify?</p>
+                            <p class="margin0">Can I transfer my domain to/from Webify?</p>
                             <i data-feather="plus" class="expand-icon"></i>
                         </div>
                         <p class="faq-container-desc hidden">Yes. However, once you have transferred a domain, your domain will be ineligible for transfers for 14 days.</p>
@@ -225,7 +228,7 @@
                     <hr>
                     <div class="faq-container">
                         <div class="faq-container-header">
-                            <p>Can I cancel my subscription at any time?</p>
+                            <p class="margin0">Can I cancel my subscription at any time?</p>
                             <i data-feather="plus" class="expand-icon"></i>
                         </div>
                         <p class="faq-container-desc hidden">Yes, you can cancel your subscription at any time. However, all payments made will not be refunded if you cancel before your subscription ends.</p>
@@ -235,7 +238,7 @@
             </section>
         </section>
 
-        <a id="goto-top" href="#hero-section">
+        <a id="goto-top" href="#hero-section" class="hidden">
             <i data-feather="chevron-up" class="icon"></i>
         </a>
 

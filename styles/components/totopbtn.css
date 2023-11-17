@@ -1,0 +1,23 @@
+/* Return to Top Button */
+#goto-top {
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+
+    padding: 10px;
+    border-radius: 100%;
+    border: 0;
+    background-color: #13315C;
+    color: white;
+    cursor: pointer;
+    z-index: 10;
+}
+
+#goto-top .icon {
+    width: 50px;
+    height: auto;
+}
+
+.hidden {
+    display: none;
+}

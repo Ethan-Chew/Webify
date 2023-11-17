@@ -9,6 +9,7 @@ This project contains of three main pages: the Landing Page, Pricing Page and Do
 ### Landing Page
 - Responsive Navigation Bar
 - Jump to Top Button
+- Typing Animation for Hero Title
 - Webify Description
 - Unique 'Selling Points' of Webify
 - Testimonials Carousel

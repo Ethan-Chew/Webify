@@ -2,9 +2,36 @@
 
 document.addEventListener("DOMContentLoaded", function() {
     const toTop = document.getElementById('goto-top')
-    console.log(toTop)
     let hasChanged = false
 
+    // Typing animation for Hero Section
+    const heroTitleTxt = "Design it, Ship it."
+    const typingAnim = async (text) => {
+        const heroTitle = document.getElementsByClassName("header")[0].getElementsByClassName("typed-title")[0]
+        heroTitle.innerText = "" // Reset Text
+        // 'Type' text
+        const typeText = async (text) => {
+            for (let i = 0; i < text.length; i++) {
+                heroTitle.insertAdjacentText("beforeend", text[i])
+                await new Promise(resolve => setTimeout(resolve, 200))
+            }
+        }
+
+        // Delete Text
+        const deleteText = async (text) => {
+            for (let i = text.length; i >= 0; i--) {
+                heroTitle.innerText = text.slice(0, i);
+                await new Promise(resolve => setTimeout(resolve, 100))
+            }
+        }
+
+        await typeText(text)
+        await new Promise(resolve => setTimeout(resolve, 5000)) // Wait 5s before delete animation
+        await deleteText(text)
+    }
+    typingAnim(heroTitleTxt)
+    setInterval(() => typingAnim(heroTitleTxt), (200 * heroTitleTxt.length) + (100 * heroTitleTxt.length) + 6000) // Repeat every 1s
+    
     // Handle Page Scroll
     window.addEventListener('scroll', function() {
         let scrollDist = document.documentElement.scrollTop || document.body.scrollTop || 0
@@ -15,6 +42,19 @@ document.addEventListener("DOMContentLoaded", function() {
         } else if (scrollDist < this.window.innerHeight && hasChanged) {
             toTop.style.cssText += "display: none;"
             hasChanged = false
+        }
+
+        // Ensure the Go to Top button does not intersect footer
+        const footerRect = document.getElementsByTagName("footer")[0].getBoundingClientRect()
+        const topButtonBottomPos = toTop.offsetTop + toTop.offsetHeight
+        if (footerRect.y < topButtonBottomPos) {
+            // If True, Button is lower than the Footer
+            let heightDiff = topButtonBottomPos - footerRect.y;
+            let style = window.getComputedStyle(toTop);
+            let addBottom = parseInt(style.getPropertyValue('bottom')) + heightDiff;
+            toTop.style.bottom = addBottom + 20 + 'px';
+        } else {
+            toTop.style.bottom = '' // Remove bottom padding if button higher than footer
         }
     })
 
@@ -87,4 +127,6 @@ document.addEventListener("DOMContentLoaded", function() {
             faqArr[i] = !faqArr[i]
         })
     }
+
+
 })

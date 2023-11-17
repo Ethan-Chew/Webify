@@ -11,7 +11,7 @@ I aimed to design a website that incorporated all the necessary features and fun
 
 Due to the time constraints and limitations surrounding this project, the developed site will only contain the landing pages meant for the promotion of the company/app and not any of the web-builder functionality.  
 
-As part of my research, I have taken a look what are some of the essential pre-requisites to creating a website from this [website](https://digital.com/how-to-create-a-website/) and pre-existing web builders such as [Squarespace](https://www.squarespace.com/), [Wordpress](https://wordpress.org/) and [Weebly](https://www.weebly.com/sg).
+As part of my research, I have taken a look what are some of the essential pre-requisites to creating a website from this [website](https://digital.com/how-to-create-a-website/) and pre-existing web builders such as [Squarespace](https://www.squarespace.com/), [Wordpress](https://wordpress.org/), [Weebly](https://www.weebly.com/sg) and [Wix](https://www.wix.com/).
 
 ## Design
 

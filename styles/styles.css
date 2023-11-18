@@ -17,7 +17,7 @@ body::-webkit-scrollbar{
 
 /* Variables */
 :root {
-    --subtitle-size: 50px;
+    --subtitle-size: 45px;
 }
 
 /* Titles and Descriptions */
@@ -63,12 +63,12 @@ body::-webkit-scrollbar{
 }
 
 #hero-section .header .title {
-    font-size: 100px !important;
+    font-size: 80px !important;
     margin-bottom: 25px;
 }
 
 #hero-section .header .desc {
-    font-size: 28px !important;
+    font-size: 24px !important;
     width: 80%;
 }
 
@@ -77,7 +77,7 @@ body::-webkit-scrollbar{
     border: none;
     padding: 15px 30px;
     border-radius: 50px;
-    font-size: 28px;
+    font-size: 23px;
     cursor: pointer;
 
     scale: 1;
@@ -113,12 +113,12 @@ body::-webkit-scrollbar{
 
 #whoweare .desc {
     margin-top: 10px;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 #whoweare img {
     object-fit: fit;
-    width: 40%;
+    width: 30%;
     height: auto;
 }
 
@@ -126,7 +126,7 @@ body::-webkit-scrollbar{
 #features {
     background-color: #eff0f2;
     padding: 3% 5%;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 #features .title {
@@ -200,7 +200,7 @@ body::-webkit-scrollbar{
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 #testimonials .title {
@@ -274,7 +274,7 @@ body::-webkit-scrollbar{
 }
 
 #testimonials .testimonial-img {
-    height: 45px;
+    height: 1.8em;
     width: auto;
 }
 
@@ -286,7 +286,7 @@ body::-webkit-scrollbar{
     flex-direction: row;
     flex-wrap: wrap;
     gap: 40px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 #contact-faq .title {
@@ -328,9 +328,9 @@ body::-webkit-scrollbar{
 }
 
 #contact-faq button {
-    margin-top: 1.2rem;
+    margin-top: 1.2em;
     font-size: 1em;
-    padding: 12px 3rem;
+    padding: 12px 3em;
     border: 0;
     border-radius: 0.9em;
     font-weight: 700;
@@ -394,7 +394,7 @@ body::-webkit-scrollbar{
     }
 
     #hero-section .header .desc {
-        font-size: 25px !important;
+        font-size: 20px !important;
         width: 80%;
     }
 
@@ -403,12 +403,8 @@ body::-webkit-scrollbar{
     }
 
     /* Who We Are Section */
-    #whoweare .title {
-        font-size: 50px;
-    }
-    
     #whoweare .desc {
-        font-size: 22px;
+        font-size: 18px;
     }
 
     /* Carousel Section */

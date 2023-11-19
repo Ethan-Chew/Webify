@@ -1,7 +1,7 @@
 # Webify
 **Webify** is an all-in-one website builder designed for developers of all skill sets. It empowers users with the flexibility and freedom to effortlessly create their dream websites, whether for personal or business use.
 
-**Disclaimer:** This website is solely created for a school assignment, and all information and names mentioned are entirely fictional. All content in this site does not act as real-world information.
+**Disclaimer:** This website is solely created for a school assignment, and all information and names mentioned are entirely fictional, any resemblence to real-life entities is purely a coincidence. All content in this site does not act as real-world information.
 
 ## Features
 This project contains of three main pages: the Landing Page, Pricing Page and Domains Page.
@@ -36,3 +36,7 @@ This website was created using [Adobe XD](https://helpx.adobe.com/support/xd.htm
 1. [Figma Logo](https://worldvectorlogo.com/logo/figma-5)
 2. [Airbnb Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/512px-Airbnb_Logo_B%C3%A9lo.svg.png)
 3. [OpenAI Logo](https://openai.com/brand)
+4. Images downloaded with Licence from Shutterstock
+    1. [Image used for 'Advanced Analytics'](https://www.shutterstock.com/image-vector/data-analysis-concept-3d-illustration-icon-2124397457)
+    2. [Image used for 'For Everyone'](https://www.shutterstock.com/image-vector/building-website-hands-doing-web-design-1971708224)
+    3. 

@@ -68,8 +68,7 @@ body::-webkit-scrollbar{
 }
 
 #hero-section .header .desc {
-    font-size: 24px !important;
-    width: 80%;
+    font-size: 26px !important;
 }
 
 #hero-section .header button {
@@ -148,7 +147,7 @@ body::-webkit-scrollbar{
 }
 
 #features .feature img {
-    max-width: 20vw;
+    max-width: 22vw;
     height: auto;
 }
 

@@ -33,6 +33,7 @@ footer .social-media-icons {
     display: flex;
     flex-direction: row;
     gap: 15px;
+    cursor: pointer;
 }
 
 footer .social-media-icons .icon {

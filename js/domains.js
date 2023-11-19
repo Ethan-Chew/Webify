@@ -64,6 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const searchBar = document.getElementById("search-bar")
     searchBar.addEventListener("submit", function (e) {
         e.preventDefault()
+        displayedDomainDivs = [] // Reset Displayed Domains
 
         userSearch = searchBar[0].value
         if (userSearch === "") {

@@ -93,6 +93,7 @@ body::-webkit-scrollbar{
     padding: 5px 20px;
     border-radius: 20px;
     display: none;
+    color: black;
 }
 
 #recommended-domains #search-result {
@@ -186,7 +187,7 @@ body::-webkit-scrollbar{
     /* Hero Section */
     #hero-section {
         font-size: 18px;
-        height: 330px;
+        height: 350px;
     }
 
     /* Domains Section */

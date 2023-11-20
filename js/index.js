@@ -72,43 +72,6 @@ document.addEventListener("DOMContentLoaded", function() {
         })
     }
 
-    // Swipe Gesture for Testimonials on Mobile
-    function enableSwipe() {
-        const width = Math.max(document.clientWidth || 0, window.innerWidth || 0)
-        if (width < 480) {
-            const carouselSlider = document.getElementsByClassName("carousel-slider")[0]
-            let touchstartX = 0, touchstartY = 0, touchendX = 0, touchendY = 0
-
-            carouselSlider.addEventListener('touchstart', function (event) { // Swipe Started
-                touchstartX = event.changedTouches[0].screenX;
-                touchstartY = event.changedTouches[0].screenY;
-            }, false);
-            
-            carouselSlider.addEventListener('touchend', function (event) { // Swipe Ended
-                touchendX = event.changedTouches[0].screenX;
-                touchendY = event.changedTouches[0].screenY;
-                let direction = ""
-                
-                // Determine Swipe Direction
-                if (touchendX < touchstartX) {
-                    direction = "left"
-                }
-            
-                if (touchendX > touchstartX) {
-                    direction = "right"
-                }
-
-                // Update View
-                updateShownTestimonial(direction)
-            }, false);
-        }
-    }
-
-    // Check if is mobile sized, if yes, enable swipe
-    window.onload = enableSwipe();
-    window.onresize = () => enableSwipe();
-
-
     // Handle Contact Us Form Submission
     document.getElementById("contact-form").addEventListener("submit", function (e) {
         e.preventDefault()

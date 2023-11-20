@@ -118,6 +118,7 @@ body::-webkit-scrollbar{
     width: 100%;
     display: inline-flex;
     cursor: pointer;
+    color: black;
 }
 
 #price-tiers .tier .action-btn-icn {

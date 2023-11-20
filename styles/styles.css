@@ -78,6 +78,7 @@ body::-webkit-scrollbar{
     border-radius: 50px;
     font-size: 23px;
     cursor: pointer;
+    color: black;
 
     scale: 1;
     transition: 0.2s scale;
@@ -563,12 +564,5 @@ body::-webkit-scrollbar{
         flex-basis: 100%;
         align-items: center;
         text-align: center;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    /* For Smaller Screen Width, e.g. Mobile, disable tapping icon, allow swipe */
-    #testimonials .carousel-icon {
-        display: none;
     }
 }

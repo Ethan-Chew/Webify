@@ -9,6 +9,9 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0px;
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 body::-webkit-scrollbar{
@@ -233,7 +236,7 @@ body::-webkit-scrollbar{
     text-align: center;
 }
 
-#testimonials #hidden {
+#testimonials .hidden {
     display: none;
 }
 
@@ -263,7 +266,7 @@ body::-webkit-scrollbar{
     background-color: lightslategray;
 }
 
-#testimonials #active {
+#testimonials .active {
     scale: 1.2;
     background-color: #134074 !important;
 }

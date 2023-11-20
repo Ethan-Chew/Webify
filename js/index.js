@@ -37,8 +37,8 @@ document.addEventListener("DOMContentLoaded", function() {
     // Control Testimonial Index, and update View
     function updateShownTestimonial(direction) {
         // Hide the current carousel slider, update pagination
-        carousel[testimonialIndex].setAttribute("id", "hidden")
-        pagination[testimonialIndex].setAttribute("id", "")
+        carousel[testimonialIndex].classList.add("hidden")
+        pagination[testimonialIndex].classList.remove("active")
     
         // Update Index
         if (direction === "left") {
@@ -58,8 +58,8 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     
         // Show the new carousel slider, update pagination
-        carousel[testimonialIndex].setAttribute("id", "")
-        pagination[testimonialIndex].setAttribute("id", "active")
+        carousel[testimonialIndex].classList.remove("hidden")
+        pagination[testimonialIndex].classList.add("active")
     }
 
     // Add Click function to both Chevron Buttons

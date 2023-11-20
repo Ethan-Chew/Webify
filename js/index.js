@@ -1,5 +1,4 @@
 // JS for Main Landing Page
-
 document.addEventListener("DOMContentLoaded", function() {
     // Typing animation for Hero Section
     const heroTitleTxt = "Design it, Ship it."
@@ -34,37 +33,81 @@ document.addEventListener("DOMContentLoaded", function() {
     const carousel = document.getElementsByClassName("carousel-page")
     const pagination = document.getElementsByClassName("pagination-circle")
     const chevrons = document.getElementsByClassName("carousel-icon")
+
+    // Control Testimonial Index, and update View
+    function updateShownTestimonial(direction) {
+        // Hide the current carousel slider, update pagination
+        carousel[testimonialIndex].setAttribute("id", "hidden")
+        pagination[testimonialIndex].setAttribute("id", "")
+    
+        // Update Index
+        if (direction === "left") {
+            // Decrease the testimonialIndex
+            if (testimonialIndex - 1 < 0) {
+                testimonialIndex = carousel.length -1
+            } else {
+                testimonialIndex -= 1
+            }
+        } else if (direction === "right") {
+            // Increase the testimonialIndex
+            if (testimonialIndex + 1 >= carousel.length) {
+                testimonialIndex = 0
+            } else {
+                testimonialIndex += 1
+            }
+        }
+    
+        // Show the new carousel slider, update pagination
+        carousel[testimonialIndex].setAttribute("id", "")
+        pagination[testimonialIndex].setAttribute("id", "active")
+    }
+
+    // Add Click function to both Chevron Buttons
     for (let i = 0; i < chevrons.length; i++) {
-        // console.log(chevrons[i])
         chevrons[i].addEventListener("click", function () {
             const direction = chevrons[i].className.baseVal.includes("left") ? "left" : "right"
 
-            // Hide the current carousel slider, update pagination
-            carousel[testimonialIndex].setAttribute("id", "hidden")
-            pagination[testimonialIndex].setAttribute("id", "")
-
-            // Update Index
-            if (direction === "left") {
-                // Decrease the testimonialIndex
-                if (testimonialIndex - 1 < 0) {
-                    testimonialIndex = carousel.length -1
-                } else {
-                    testimonialIndex -= 1
-                }
-            } else {
-                // Increase the testimonialIndex
-                if (testimonialIndex + 1 >= carousel.length) {
-                    testimonialIndex = 0
-                } else {
-                    testimonialIndex += 1
-                }
-            }
-
-            // Show the new carousel slider, update pagination
-            carousel[testimonialIndex].setAttribute("id", "")
-            pagination[testimonialIndex].setAttribute("id", "active")
+            // Update View
+            updateShownTestimonial(direction)
         })
     }
+
+    // Swipe Gesture for Testimonials on Mobile
+    function enableSwipe() {
+        const width = Math.max(document.clientWidth || 0, window.innerWidth || 0)
+        if (width < 480) {
+            const carouselSlider = document.getElementsByClassName("carousel-slider")[0]
+            let touchstartX = 0, touchstartY = 0, touchendX = 0, touchendY = 0
+
+            carouselSlider.addEventListener('touchstart', function (event) { // Swipe Started
+                touchstartX = event.changedTouches[0].screenX;
+                touchstartY = event.changedTouches[0].screenY;
+            }, false);
+            
+            carouselSlider.addEventListener('touchend', function (event) { // Swipe Ended
+                touchendX = event.changedTouches[0].screenX;
+                touchendY = event.changedTouches[0].screenY;
+                let direction = ""
+                
+                // Determine Swipe Direction
+                if (touchendX < touchstartX) {
+                    direction = "left"
+                }
+            
+                if (touchendX > touchstartX) {
+                    direction = "right"
+                }
+
+                // Update View
+                updateShownTestimonial(direction)
+            }, false);
+        }
+    }
+
+    // Check if is mobile sized, if yes, enable swipe
+    window.onload = enableSwipe();
+    window.onresize = () => enableSwipe();
+
 
     // Handle Contact Us Form Submission
     document.getElementById("contact-form").addEventListener("submit", function (e) {

@@ -565,3 +565,10 @@ body::-webkit-scrollbar{
         text-align: center;
     }
 }
+
+@media only screen and (max-width: 480px) {
+    /* For Smaller Screen Width, e.g. Mobile, disable tapping icon, allow swipe */
+    #testimonials .carousel-icon {
+        display: none;
+    }
+}

@@ -26,6 +26,11 @@ header {
     color: white;
 }
 
+#navbar hr {
+    height: 1.7em;
+    border: 1px solid white;
+}
+
 .dark {
     background-color: var(--darkmode-colour) !important;
 }
@@ -94,7 +99,7 @@ header {
         border-radius: 20px;
         font-size: 18px;
     }
-
+    
     #navbar #mobile-hamburger {
         display: block;
         height: 2.6rem;
@@ -104,16 +109,29 @@ header {
     
     #mobile-tabs {
         flex-direction: column;
+        justify-content: left;
         gap: 1.1em;
         padding: 20px 40px;
         color: white;
         font-size: 1.3em;
-
+        
         background-color: rgba(255, 255, 255, 0.3);
         backdrop-filter: blur(10px); 
         border-radius: 20px;   
     }
 
+    #mobile-tabs hr {
+        height: 1.7em;
+        border: 1px solid white;
+        margin: 0 1em;
+    }
+
+    #mobile-tabs .login-signup {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
     #mobile-tabs a {
         text-decoration: none;
         color: white;

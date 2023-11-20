@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const typeText = async (text) => {
             for (let i = 0; i < text.length; i++) {
                 heroTitle.insertAdjacentText("beforeend", text[i])
-                await new Promise(resolve => setTimeout(resolve, 200))
+                await new Promise(resolve => setTimeout(resolve, 100))
             }
         }
 
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const deleteText = async (text) => {
             for (let i = text.length; i >= 0; i--) {
                 heroTitle.innerText = text.slice(0, i);
-                await new Promise(resolve => setTimeout(resolve, 100))
+                await new Promise(resolve => setTimeout(resolve, 50))
             }
         }
         
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
         await deleteText(text)
     }
     typingAnim(heroTitleTxt)
-    setInterval(() => typingAnim(heroTitleTxt), (200 * heroTitleTxt.length) + (100 * heroTitleTxt.length) + 6000) // Repeat every 1s
+    setInterval(() => typingAnim(heroTitleTxt), (100 * heroTitleTxt.length) + (50 * heroTitleTxt.length) + 6000) // Repeat every 1s
 
     // Testimonial Carousel
     let testimonialIndex = 0
@@ -80,12 +80,13 @@ document.addEventListener("DOMContentLoaded", function() {
     
     // FAQ Section
     let faqArr = []
+    const faqSections = document.getElementsByClassName("faq-container-header")
     const faqExpansions = document.getElementsByClassName("expand-icon")
     const faqDescs = document.getElementsByClassName("faq-container-desc")
-    for (let i = 0; i < faqExpansions.length; i++) {
+    for (let i = 0; i < faqSections.length; i++) {
         faqArr.push(false)
 
-        faqExpansions[i].addEventListener("click", function () {
+        faqSections[i].addEventListener("click", function () {
             if (faqArr[i] === false) {
                 // FAQ is currently hidden, make visible
                 faqDescs[i].classList.remove("hidden")

@@ -148,7 +148,7 @@ body::-webkit-scrollbar{
 
 #features .feature img {
     max-width: 22vw;
-    height: auto;
+    height: 15vw;
 }
 
 #features .feature .name {
@@ -195,7 +195,7 @@ body::-webkit-scrollbar{
 
 /* Testimonials Section */
 #testimonials {
-    margin: 3% 5%;
+    margin: 3% 5vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -207,14 +207,15 @@ body::-webkit-scrollbar{
 }
 
 #testimonials .carousel {
-    margin: 3% 10%;
+    margin: 0% 10%;
 }
 
 #testimonials .carousel-slider {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 20px;
+    gap: 2%;
+    max-width: 90vw;
 }
 
 #testimonials .carousel-slider .carousel-icon {
@@ -225,22 +226,23 @@ body::-webkit-scrollbar{
 
 #testimonials .carousel-page {
     display: block;
-    padding: 4% 6%;
-    width: 48vw;
-    border-radius: 20px;
-    background-color: #e7ecf1;
-}
-
-#testimonials .carousel-page p {
-    font-size: 0.9em;
+    padding: 2% 6%;
+    width: 55vw;
+    border-radius: 10px;
+    text-align: center;
 }
 
 #testimonials #hidden {
     display: none;
 }
 
-#testimonials .carousel-title {
-    font-weight: 500;
+#testimonials .carousel-text {
+    font-size: 1.1em !important;
+}
+
+#testimonials .carousel-title .name {
+    font-size: 1.1em;
+    font-weight: 600;
 }
 
 #testimonials .carousel-title .job {
@@ -254,18 +256,19 @@ body::-webkit-scrollbar{
 }
 
 #testimonials .pagination-circle {
-    width: 15px;
-    height: 15px;
+    width: 12px;
+    height: 12px;
     border-radius: 100%;
     background-color: lightslategray;
 }
 
 #testimonials #active {
+    scale: 1.2;
     background-color: #134074 !important;
 }
 
 #testimonials .testimonial-companies {
-    margin: 4% 25%;
+    margin: 5% 25% 0% 25%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -464,6 +467,11 @@ body::-webkit-scrollbar{
     #contact-faq .faq-container-header {
         font-size: 1.2rem;
     }
+
+    /* Carousel Section */
+    #testimonials .carousel-page {
+        width: 70vw;
+    }
 }
 
 @media only screen and (max-width: 800px) { 
@@ -513,7 +521,8 @@ body::-webkit-scrollbar{
     }
 
     #features .feature img {
-        max-width: 25vw;
+        max-width: 30vw;
+        height: 35vw;
     }
 
     #features .additional-features .add-features-section p {
@@ -533,6 +542,10 @@ body::-webkit-scrollbar{
     #contact-faq {
         margin: 6% 5%;
         font-size: 20px;
+    }
+    
+    #contact-faq input, textarea {
+        font-size: 1.1rem;
     }
 }
 

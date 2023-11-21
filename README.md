@@ -30,13 +30,14 @@ This project contains of three main pages: the Landing Page, Pricing Page and Do
 This project is further documented in the markdown files located in ```docs```.
 1. [Design Process](./docs/design-process.md) -- Thought and design process behind the website
 2. [Testing](./docs/testing.md) -- How the website can be tested
+3. [Credits](./docs/credits.md) -- Where various images and assets were taken from
+
+## Technologies Used
+- HTML -- Layout and Structure
+- CSS -- Styling and Animations
+- JavaScript -- Interactivity and Logic
+- Adobe XD -- Wireframe
+- Visual Studio Code -- Code Editing
 
 ## Credits
-This website was created using [Adobe XD](https://helpx.adobe.com/support/xd.html), [Feather Icons](https://feathericons.com/) and [Google Fonts](https://fonts.google.com). In addition, images and assets used in this project were taken from various websites.
-1. [Figma Logo](https://worldvectorlogo.com/logo/figma-5)
-2. [Airbnb Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/512px-Airbnb_Logo_B%C3%A9lo.svg.png)
-3. [OpenAI Logo](https://openai.com/brand)
-4. Images downloaded with Licence from Shutterstock
-    1. [Image used for 'Advanced Analytics'](https://www.shutterstock.com/image-vector/data-analysis-concept-3d-illustration-icon-2124397457)
-    2. [Image used for 'For Everyone'](https://www.shutterstock.com/image-vector/building-website-hands-doing-web-design-1971708224)
-    3. 
+This website was created using [Adobe XD](https://helpx.adobe.com/support/xd.html), [Feather Icons](https://feathericons.com/) and [Google Fonts](https://fonts.google.com). In addition, images and assets used in this project were taken from various websites. View the list of assets [here](./docs/credits.md).

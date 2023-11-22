@@ -133,7 +133,7 @@ body::-webkit-scrollbar{
 }
 
 #whoweare .desc {
-    font-size: 1.1em;
+    font-size: 1em;
     max-width: 50%;
 }
 
@@ -322,6 +322,7 @@ body::-webkit-scrollbar{
     flex-wrap: wrap;
     gap: 40px;
     font-size: 20px;
+    justify-content: space-between;
 }
 
 #contact-faq .title {
@@ -335,7 +336,7 @@ body::-webkit-scrollbar{
 
 /* Contact Us Section */
 #contact-faq #contact {
-    flex-basis: 60%;
+    flex-basis: 58%;
 }
 
 #contact-faq #contact .subtext {
@@ -402,6 +403,7 @@ body::-webkit-scrollbar{
     font-weight: 700;
     font-size: 1em !important;
     padding: 8px 0px;
+    cursor: pointer;
 }
 
 #contact-faq .faq-container-header p {
@@ -420,7 +422,6 @@ body::-webkit-scrollbar{
     margin-left: auto;
     width: 1em;
     height: auto;
-    cursor: pointer;
 }
 
 /* === RESPONSIVE UI ===*/

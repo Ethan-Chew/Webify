@@ -23,7 +23,7 @@ This project contains of three main pages: the Landing Page, Pricing Page and Do
 
 ### Domains Page
 - 'Search' for a Domain
-- Search Result Sorting (Highest Price, Lowest Price, Price Range) 
+- Search Result Sorting (Highest Price, Lowest Price) 
 - Display Discounts on Domains
 
 ## Further Documentation
@@ -38,6 +38,7 @@ This project is further documented in the markdown files located in ```docs```.
 - JavaScript -- Interactivity and Logic
 - Adobe XD -- Wireframe
 - Visual Studio Code -- Code Editing
+- GitHub -- Version Control
 
 ## Credits
 This website was created using [Adobe XD](https://helpx.adobe.com/support/xd.html), [Feather Icons](https://feathericons.com/) and [Google Fonts](https://fonts.google.com). In addition, images and assets used in this project were taken from various websites. View the list of assets [here](./docs/credits.md).

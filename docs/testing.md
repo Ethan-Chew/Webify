@@ -2,7 +2,7 @@
 This document details how this project can be tested
 
 ## Responsiveness
-This project will work fine on all phone sizes. Depending on the device's screen size, various elements will be rendered differently, and the font sizes are decreased.
+This project will work fine on all phone sizes. Depending on the device's screen size, various elements will be rendered differently, and the font sizes are decreased. Some of the key responsiveness features have been listed below.
 1. **Navigation Bar**
     - On Both Desktop and Mobile, the Navigation Bar spans the top of the screen 
     - On Desktop, company name remains on the left side, and it's various tabs on the right
@@ -16,10 +16,10 @@ This project will work fine on all phone sizes. Depending on the device's screen
 
 ## Home Page
 1. Hovering over the 'Get Started' Button will cause it to scale up.
-2. An arrow allowing you to jump to the top of the screen will appear once you scrolled past a certain point (1vh -- the height of your screen)
+2. An arrow allowing you to jump to the top of the screen will appear once you scrolled past a certain point (beyond 1 height of your screen)
     - Clicking on this arrow will bring you back to the top.
 3. Navigate and view different testimonials by clicking on the left and right arrows respectively.
-    - As the arrows are clicked, the testimonial will change and current page index will be reflected in the circles below.
+    - As the arrows are clicked, the testimonial will change and current page can be seen from the 'page circles' below it.
 4. Contact Us form can only be submitted once all fields are filled in correctly
     - All fields have to be filled in
     - The Email Field has to contain a valid email

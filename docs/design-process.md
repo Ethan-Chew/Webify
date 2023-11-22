@@ -7,7 +7,7 @@ When creating a website, there are many things to consider. The design, code, as
 It also caters to more advanced users by allowing them to edit the code in the website, configure their Domain Name System (DNS), and even collaborate with others.
 
 ## Research
-I aimed to design a website that incorporated all the necessary features and functions needed for developers, whether they are just starting or have much experience in developing websites.  
+I aimed to design a website that incorporated all the necessary features and functions needed for people to build their dream website, whether they are just starting or have much experience in developing websites.  
 
 Due to the time constraints and limitations surrounding this project, the developed site will only contain the landing pages meant for the promotion of the company/app and not any of the web-builder functionality.  
 

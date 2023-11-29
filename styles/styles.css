@@ -83,13 +83,13 @@ body::-webkit-scrollbar{
     cursor: pointer;
     color: black;
 
-    scale: 1;
-    transition: 0.2s scale;
+    transform: scale(1);
+    transition: 0.2s transform;
 }
 
 #hero-section .header button:hover {
-    scale: 1.05;
-    transition: 0.2s scale;
+    transform: scale(1.05);
+    transition: 0.2s transform;
 }
 
 #hero-section .down-arrow {
@@ -284,7 +284,7 @@ body::-webkit-scrollbar{
 }
 
 #testimonials .active {
-    scale: 1.2;
+    transform: scale(1.2);
     background-color: #134074 !important;
 }
 

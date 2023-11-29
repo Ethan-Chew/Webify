@@ -2,7 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", function() {
     const domainListContainer = document.getElementsByClassName("domain-list")[0]
-    const tlds = [".com", ".net", ".org", ".edu", ".gov", ".mil", ".int", ".biz", ".info", ".name", ".pro", ".coop", ".aero", ".museum", ".jobs", ".mobi", ".tel", ".asia", ".travel", ".tv"];
+    const tlds = [".com", ".net", ".org", ".edu", ".gov", ".mil", ".int", ".biz", ".info", ".name", ".pro", ".coop", ".aero", ".museum", ".jobs", ".mobi", ".tel", ".asia", ".travel", ".tv"]; // List of predefined Top-Level-Domains
     let userSearch = ""
     let displayedDomainDivs = [] // Array of Objects; Stores: Domain Name, Discount, Price, ContainerDOM
     const dropdownSort = document.getElementById("sorter")

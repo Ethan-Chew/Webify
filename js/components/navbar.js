@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     if (!navbar.classList.contains("dark")) {
         window.addEventListener('scroll', function() {
-            let scrollDist = document.documentElement.scrollTop || document.body.scrollTop || 0
+            let scrollDist = document.documentElement.scrollTop || document.body.scrollTop || 0 // Get the distance that the user has scrolled
         
             if (scrollDist > this.window.innerHeight && !hasChanged) {
                 navbar.classList.add("colorChangeAdd")

@@ -44,6 +44,7 @@ footer .social-media-icons .icon {
     height: auto;
 }
 
+/* Mobile Responsiveness -- Change order of items */
 @media only screen and (max-width: 768px) {  
     footer {
         flex-direction: column;

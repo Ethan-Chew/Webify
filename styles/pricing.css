@@ -38,11 +38,6 @@ body::-webkit-scrollbar{
     font-weight: 800;
 }
 
-#hero-section .desc {
-    margin: 5px 0px;
-    font-size: 30px;
-}
-
 /* Price Tiers */
 #price-tiers {
     margin: 0px 4%;

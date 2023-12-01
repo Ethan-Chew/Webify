@@ -28,4 +28,4 @@ This project uses the [Roboto](https://fonts.google.com/specimen/Roboto) Font ob
 The Wireframe for this Project was created using Adobe XD. Three main screens are designed in the wireframe in their Desktop and Mobile look: the Landing Page, Pricing Page, and Domains Page.  
 
 You can take a look at the [wireframe made on Adobe XD here](https://xd.adobe.com/view/8e39e14d-1ab2-4f73-a6fe-c233b51017f3-db6a/).
-![XD Wireframe](./assets/Wireframe.png)
+![XD Wireframe](./assets/wireframe.png)

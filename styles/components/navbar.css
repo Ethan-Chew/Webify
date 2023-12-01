@@ -1,6 +1,7 @@
 /* Styles for the Navigation Bar, identified with the id: navbar */
 :root {
-    --darkmode-colour: #1A579E;
+    /* Standardised dark-mode colour for the navbar */
+    --darkmode-colour: #1A579E; 
 }
 
 header {
@@ -35,6 +36,7 @@ header {
     background-color: var(--darkmode-colour) !important;
 }
 
+/* Allows for navbar to swap between a opaque and slightly transparent background */
 .colorChangeAdd {
     background-color: var(--darkmode-colour) !important;
     transition: 0.3s background-color;
@@ -57,6 +59,7 @@ header {
     display: none;
 }
 
+/* Hide the mobile tabs when on desktop */
 #mobile-tabs {
     display: none;
 }
@@ -107,6 +110,7 @@ header {
         margin-left: auto;
     }
     
+    /* CSS for the dropdown tab menu shown on mobile */
     #mobile-tabs {
         flex-direction: column;
         justify-content: left;

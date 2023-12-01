@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }
         
+        // Type the Text, wait for 5s, then delete the text
         await typeText(text)
         await new Promise(resolve => setTimeout(resolve, 5000)) // Wait 5s before delete animation
         await deleteText(text)
